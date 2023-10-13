@@ -1,0 +1,6 @@
+Frankly, there are a lot that can be considered:
+- Must handle the vehicle parked
+- Must handle the different vehicles
+- Must handle the different times, ranges, payments, etc
+- Must be able to handle discount coupons and other promotions
+- Must be able to handle different parking rates

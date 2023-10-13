@@ -1,0 +1,46 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww29100\viewh8800\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs34 \cf0 Commands
+\fs24 \
+(More information about the jacoco commands can be found online at https://www.jacoco.org/jacoco/trunk/doc/cli.html.)\
+\
+Compiling and executing the case study (plus test driver) without Jacoco\
+
+\f1\fs22 1. Compiling the software under test and putting the resulting class file in a target folder.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf2 \CocoaLigature0 javac CaseStudy/sourceApp/Integer_SQRT.java -d CaseStudy/classApp/\
+
+\fs22 \cf0 \CocoaLigature1 2. Compiling the test driver that contains all the tests to execute and putting the resulting class file in a test folder.\
+
+\fs24 \cf2 \CocoaLigature0 javac -cp CaseStudy/classApp/ CaseStudy/sourceTest/IntegerTest.java -d CaseStudy/classTest/\
+
+\fs22 \cf0 \CocoaLigature1 3. Executing the test driver, i.e. its test cases.\
+
+\fs24 \cf2 \CocoaLigature0 java -cp CaseStudy/classApp/:CaseStudy/classTest/ IntegerTest\
+
+\fs22 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+Compiling and executing the case study with Jacoco
+\f1 \
+
+\fs22 1. Instrumenting the software under test (not the test driver) and placing the instrumented class file in a specific folder\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf2 \CocoaLigature0 java -jar CaseStudy/libs/jacococli.jar instrument CaseStudy/classApp --dest CaseStudy/instrumented\
+
+\fs22 \cf0 \CocoaLigature1 2. Executing the, already compiled test driver (see above), on the instrumented code. We need to tell where to find the jacoco agent so the instrumented code knows how to produce execution data. This creates a jacobo.exec file in the folder from where you execute the command. The file contains instrumentation results.\
+
+\fs24 \cf2 \CocoaLigature0 java -cp CaseStudy/instrumented:CaseStudy/classTest:CaseStudy/libs/* IntegerTest\
+
+\fs22 \cf0 \CocoaLigature1 3. Producing a report. The command populates folder \'93report\'94 with html files. Open file index.html for the full report.\
+
+\fs24 \cf2 \CocoaLigature0 java -jar CaseStudy/libs/jacococli.jar report jacoco.exec --classfiles CaseStudy/classApp --html CaseStudy/report --sourcefiles CaseStudy/sourceApp\cf0 \CocoaLigature1 \
+}

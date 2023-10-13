@@ -1,0 +1,2 @@
+1- The make_a_free_slot() is not being tested as it is private
+2- Last Else clause in union is unreachable as the condition is always fulfilled

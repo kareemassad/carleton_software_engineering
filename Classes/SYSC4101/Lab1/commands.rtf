@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fswiss\fcharset0 Helvetica;}{\f1\froman\fcharset0 Times-Roman;}{\f2\fmodern\fcharset0 Courier;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22000}\viewkind4\uc1 
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f0\fs34\lang9 Commands (Linux like operating system)\f1\fs24\par
+\f0 (More information about the jacoco commands can be found online at {{\field{\*\fldinst{HYPERLINK https://www.jacoco.org/jacoco/trunk/doc/cli.html }}{\fldrslt{https://www.jacoco.org/jacoco/trunk/doc/cli.html\ul0\cf0}}}}\f0\fs24 .)\par
+\f1\par
+\par
+\par
+\f0 Compiling and executing the case study (plus test driver) without Jacoco\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426 1.\tab Compiling the software under test and putting the resulting class file in a target folder.\f1\par
+
+\pard\li567\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f2\fs20 javac ./CaseStudy/sourceApp/OrdSetSimple.java -d ./CaseStudy/classApp/\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426\f0\fs24 2.\tab Compiling the test driver that contains all the tests to execute and putting the resulting class file in a test folder.\f1\par
+
+\pard\li567\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f2\fs20 javac -cp ./CaseStudy/classApp ./CaseStudy/sourceTest/OrdSetSimple_Driver.java -d ./CaseStudy/classTest/\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426\f0\fs24 3.\tab Executing the test driver, i.e. its test cases.\f1\par
+
+\pard\li567\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f2\fs20 java -cp ./CaseStudy/classApp:./CaseStudy/classTest OrdSetSimple_Driver\par
+
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f1\fs24\par
+\par
+\par
+\f0 Compiling and executing the case study with Jacoco\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426 1.\tab Instrumenting the software under test (not the test driver) and placing the instrumented class file in a specific folder; This assumes the software under test has already been compiled (see above).\f1\par
+
+\pard\li567\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\f2\fs20 java -jar CaseStudy/libs/jacococli.jar instrument CaseStudy/classApp --dest CaseStudy/instrumented\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426\f0\fs24 2.\tab Executing the, already compiled test driver (see above), on the instrumented code. We need to tell where to find the jacoco agent so the instrumented code knows how to produce execution data. This creates a jacoco.exec file in the folder from where you execute the command. The file contains instrumentation results. If file jacoco.exec does not exist, it is created; if file jacoco.exec already exists, its contents is updated. (This means that if you wish to restart all structural coverage measurement from scratch, you need to first delete file jacobo.exec.)\f1\par
+
+\pard\li567\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\f2\fs20 java -cp CaseStudy/instrumented:CaseStudy/classTest:CaseStudy/libs/* OrdSetSimple_Driver\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426\f0\fs24 3.\tab Producing a report. The command populates folder \ldblquote report\rdblquote  with html files. Open file index.html for the full report and click on file names and function names to see the report, what has been executed (covered) and what has not\f1 .\par
+
+\pard\li567\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\f2\fs20 java -jar CaseStudy/libs/jacococli.jar report jacoco.exec --classfiles CaseStudy/classApp --html CaseStudy/report --sourcefiles CaseStudy/sourceApp\par
+
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\f1\fs24\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f0\fs34 Commands (Windows like operating system)\f1\fs24\par
+\f0 (More information about the jacoco commands can be found online at {{\field{\*\fldinst{HYPERLINK https://www.jacoco.org/jacoco/trunk/doc/cli.html }}{\fldrslt{https://www.jacoco.org/jacoco/trunk/doc/cli.html\ul0\cf0}}}}\f0\fs24 .)\par
+\par
+\par
+\par
+Compiling and executing the case study (plus test driver) without Jacoco\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426 1.\tab Compiling the software under test and putting the resulting class file in a target folder.\par
+
+\pard\li567\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f2\fs20 javac .\\CaseStudy\\sourceApp\\OrdSetSimple.java -d .\\CaseStudy\\classApp\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426\f0\fs24 2.\tab Compiling the test driver that contains all the tests to execute and putting the resulting class file in a test folder.\f1\par
+
+\pard\li567\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f2\fs20 javac -cp .\\CaseStudy\\classApp .\\CaseStudy\\sourceTest\\OrdSetSimple_Driver.java -d .\\CaseStudy\\classTest\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426\f0\fs24 3.\tab Executing the test driver, i.e. its test cases.\f1\par
+
+\pard\li567\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f2\fs20 java -cp .\\CaseStudy\\classApp;.\\CaseStudy\\classTest OrdSetSimple_Driver\par
+
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\f1\fs24\tab java -cp ".\\CaseStudy\\classApp;.\\CaseStudy\\classTest" OrdSetSimple_Driver \par
+\par
+\par
+\f0 Compiling and executing the case study with Jacoco\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426 1.\tab Instrumenting the software under test (not the test driver) and placing the instrumented class file in a specific folder; This assumes the software under test has already been compiled (see above).\par
+
+\pard\li567\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\f2\fs20 java -jar .\\CaseStudy\\libs\\jacococli.jar instrument .\\CaseStudy\\classApp --dest .\\CaseStudy\\instrumented\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426\f0\fs24 2.\tab Executing the, already compiled test driver (see above), on the instrumented code. We need to tell where to find the jacoco agent so the instrumented code knows how to produce execution data. This creates a jacoco.exec file in the folder from where you execute the command. The file contains instrumentation results. If file jacoco.exec does not exist, it is created; if file jacoco.exec already exists, its contents is updated. (This means that if you wish to restart all structural coverage measurement from scratch, you need to first delete file jacoco.exec.)\f1\par
+
+\pard\li567\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\f2\fs20 java -cp .\\CaseStudy\\instrumented;.\\CaseStudy\\classTest;.\\CaseStudy\\libs\\* OrdSetSimple_Driver\par
+java -cp ".\\CaseStudy\\instrumented;.\\CaseStudy\\classTest;.\\CaseStudy\\libs\\*" OrdSetSimple_Driver\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li426\f0\fs24 3.\tab Producing a report. The command populates folder \ldblquote report\rdblquote  with html files. Open file index.html for the full report and click on file names and function names to see the report, what has been executed (covered) and what has not\f1 .\par
+
+\pard\li567\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\f2\fs20 java -jar .\\CaseStudy\\libs\\jacococli.jar report jacoco.exec --classfiles .\\CaseStudy\\classApp --html .\\CaseStudy\\report --sourcefiles .\\CaseStudy\\sourceApp\par
+
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\f1\fs24\par
+\par
+\par
+}
+ 

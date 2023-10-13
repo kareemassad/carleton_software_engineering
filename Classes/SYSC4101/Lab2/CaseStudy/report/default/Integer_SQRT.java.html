@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Integer_SQRT.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Integer_SQRT.java</span></div><h1>Integer_SQRT.java</h1><pre class="source lang-java linenums">import java.io.*;
+
+<span class="fc" id="L3">public class Integer_SQRT {</span>
+
+	public static int integer_sqrt_v1(int n) {
+		int small_candidate, large_candidate;
+<span class="fc bfc" id="L7" title="All 2 branches covered.">		if (n &lt; 0) {</span>
+<span class="fc" id="L8">			System.out.println(&quot;Input should be positive or null.&quot;);</span>
+<span class="fc" id="L9">			return -1;</span>
+		}
+<span class="fc bfc" id="L11" title="All 2 branches covered.">		if (n &lt; 2)</span>
+<span class="fc" id="L12">			return n;</span>
+<span class="fc" id="L13">		small_candidate = integer_sqrt_v1(n &gt;&gt; 2) &lt;&lt; 1;</span>
+<span class="fc" id="L14">		large_candidate = small_candidate + 1;</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">		if (large_candidate * large_candidate &gt; n)</span>
+<span class="fc" id="L16">			return small_candidate;</span>
+		else
+<span class="fc" id="L18">			return large_candidate;</span>
+	}
+
+	public static int integer_sqrt_v2(int n) {
+<span class="fc" id="L22">		System.out.print(&quot;Trace: 2 &quot;);</span>
+		int shift, result, large_candidate;
+<span class="fc" id="L24">		System.out.print(&quot;3 &quot;);</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">		if (n &lt; 0) {</span>
+<span class="fc" id="L26">			System.out.print(&quot;4&quot;);</span>
+<span class="fc" id="L27">			System.out.println(&quot;Input should be positive or null.&quot;);</span>
+<span class="fc" id="L28">			return -1;</span>
+		}
+<span class="fc" id="L30">		System.out.print(&quot;7 &quot;);</span>
+<span class="fc bfc" id="L31" title="All 4 branches covered.">		if ((n == 0) || (n == 1)) {</span>
+<span class="fc" id="L32">			System.out.print(&quot;8&quot;);</span>
+<span class="fc" id="L33">			return n;</span>
+		}
+<span class="fc" id="L35">		System.out.print(&quot;9 10 &quot;);</span>
+<span class="fc" id="L36">		shift = 2;</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">		while ((n &gt;&gt; shift) != 0) {</span>
+<span class="fc" id="L38">			System.out.print(&quot;11 &quot;);</span>
+<span class="fc" id="L39">			shift += 2;</span>
+		}
+<span class="fc" id="L41">		System.out.print(&quot;13 14 &quot;);</span>
+<span class="fc" id="L42">		result = 0;</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">		while (shift &gt;= 0) {</span>
+<span class="fc" id="L44">			System.out.print(&quot;15 16 17 &quot;);</span>
+<span class="fc" id="L45">			result = result &lt;&lt; 1;</span>
+<span class="fc" id="L46">			large_candidate = result + 1;</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">			if (large_candidate * large_candidate &lt;= (n &gt;&gt; shift)) {</span>
+<span class="fc" id="L48">				System.out.print(&quot;18 &quot;);</span>
+<span class="fc" id="L49">				result = large_candidate;</span>
+			}
+<span class="fc" id="L51">			System.out.print(&quot;19 &quot;);</span>
+<span class="fc" id="L52">			shift -= 2;</span>
+		}
+<span class="fc" id="L54">		System.out.print(&quot;21&quot;);</span>
+<span class="fc" id="L55">		return result;</span>
+	}
+
+	public static int integer_sqrt_v3(int n) {
+<span class="fc bfc" id="L59" title="All 2 branches covered.">		if (n &lt; 0) {</span>
+<span class="fc" id="L60">			System.out.println(&quot;Input should be positive or null.&quot;);</span>
+<span class="fc" id="L61">			return -1;</span>
+		}
+<span class="fc" id="L63">		int x0 = n &gt;&gt; 1;</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">		if (x0 &gt;= 1) {</span>
+<span class="fc" id="L65">			int x1 = (x0 + n / x0) &gt;&gt; 1;</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">			while (x1 &lt; x0) {</span>
+<span class="fc" id="L67">				x0 = x1;</span>
+<span class="fc" id="L68">				x1 = (x0 + n / x0) &gt;&gt; 1;</span>
+			}
+<span class="fc" id="L70">			return x0;</span>
+		} else
+<span class="fc" id="L72">			return n;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202107230224</span></div></body></html>

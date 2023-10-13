@@ -1,0 +1,5 @@
+Q4)
+None of the tests exercise this path. No input works as we are not able to print 18 and skip 11.
+The only two numbers that pass the criteria are 2 and 3 but they would still not get the desired output.
+
+Q5) Both 2 and 3 would work. This is because the conditions will be met as specified in the criterion. Any number greater or lower would trigger the other conditions and make it false. 

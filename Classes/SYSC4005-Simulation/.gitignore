@@ -127,3 +127,31 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# arara compilation output
+.lof
+.acn
+.acr
+.aux
+.bbl
+.bcf
+.blg
+.cgls
+.cstig
+.cstog
+.glg
+.glo
+.gls
+.ist
+.lof
+.slo
+.lol
+.lot
+.mw
+.out
+.xml
+.slg
+.slo
+.sls
+.gz
+.toc

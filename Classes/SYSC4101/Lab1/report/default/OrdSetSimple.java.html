@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OrdSetSimple.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">OrdSetSimple.java</span></div><h1>OrdSetSimple.java</h1><pre class="source lang-java linenums">public class OrdSetSimple {
+  private int _setCapacity;
+  private int _set[];
+  private int _indexLastElement;
+
+
+  /**
+   * Constructor of an ordered set of integers.
+   * @param capacity The capacity of the set, that is the maximum number of elements the set can contain.
+   */
+<span class="fc" id="L11">  public OrdSetSimple(int capacity) {</span>
+    int index;
+<span class="fc" id="L13">  	_setCapacity=capacity;</span>
+<span class="fc" id="L14">    _set = new int[_setCapacity];</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">  	for(index=0; index&lt;_setCapacity; index++)</span>
+<span class="fc" id="L16">	  	_set[index]=0;</span>
+<span class="fc" id="L17">    _indexLastElement=-1;</span>
+<span class="fc" id="L18">  }</span>
+  
+  /**
+   * When adding an element to an non-empty set, we first need to make some room for it.
+   * @param val The integer element to add to the set
+   * @return The position that has been freed and where the element can be added.
+   */
+  private int make_a_free_slot(int val) {
+  	int pos, i, j;
+
+<span class="fc" id="L28">  	pos = find(val);</span>
+<span class="pc bpc" id="L29" title="1 of 2 branches missed.">  	if (pos &gt;= 0)</span>
+<span class="nc" id="L30">		return -1;</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">  	for (i=0; i&lt;=_indexLastElement; i++) {</span>
+<span class="pc bpc" id="L32" title="1 of 2 branches missed.">	  	if (_set[i] &gt; val)</span>
+<span class="nc" id="L33">		  	break;</span>
+   	}
+
+<span class="pc bpc" id="L36" title="1 of 4 branches missed.">  	if ((i&lt;=_indexLastElement)||(_indexLastElement==-1)) {</span>
+<span class="pc bpc" id="L37" title="1 of 2 branches missed.">  		for (j=_indexLastElement; j&gt;=i; j--)</span>
+<span class="nc" id="L38">		  	_set[j+1] = _set[j];</span>
+<span class="fc" id="L39">  		pos = i;</span>
+    } else {
+<span class="fc" id="L41">		pos = _indexLastElement+1;</span>
+  	}
+<span class="fc" id="L43">	_indexLastElement++;</span>
+<span class="fc" id="L44">  	return pos;</span>
+  }
+ 
+  /**
+   * Adding an element to the set.
+   * @param n The integer value to add to this set.
+   */
+  public void addElement(int n) {
+  	int pos;
+<span class="fc bfc" id="L53" title="All 2 branches covered.">	if (n&lt;=0) {</span>
+<span class="fc" id="L54">		System.out.println(&quot;Addition of a negative integer impossible\n&quot;);</span>
+<span class="fc" id="L55">  		return;</span>
+	}
+<span class="fc bfc" id="L57" title="All 2 branches covered.">  	if (_indexLastElement+1&gt;=_setCapacity) {</span>
+<span class="fc" id="L58">  		System.out.print(&quot;Addition of &quot; + n);</span>
+<span class="fc" id="L59">  		System.out.println(&quot; impossible since the array is already full&quot;);</span>
+<span class="fc" id="L60">  		System.out.println(&quot;The array is: &quot; + toString());</span>
+  	} else {
+<span class="fc" id="L62">  		pos = make_a_free_slot(n);</span>
+<span class="pc bpc" id="L63" title="1 of 2 branches missed.">  		if (pos&gt;=0)</span>
+<span class="fc" id="L64">	  		_set[pos]=n;</span>
+  	}
+<span class="fc" id="L66">    return;</span>
+  }
+
+  /**
+   * Remoning an element from the set
+   * @param val The integer value to remove
+   * @return true if the element has been removed, false otherwise (i.e., the element is not in the set)
+   */
+  public boolean remove(int val) {
+<span class="fc" id="L75">	int where = find(val);</span>
+	int index;
+<span class="fc bfc" id="L77" title="All 2 branches covered.">	if (where &gt;= 0) {</span>
+<span class="fc bfc" id="L78" title="All 2 branches covered.">		for (index = where; index &lt; _indexLastElement; index++) {</span>
+<span class="fc" id="L79">			_set[index] = _set[index+1];</span>
+		}
+<span class="fc" id="L81">		_indexLastElement --;</span>
+<span class="fc" id="L82">		return true;</span>
+	} else {
+<span class="fc" id="L84">		return false;</span>
+	}
+  }
+
+  /**
+   * Returns the capacity of this set, that is the maximum number of elements we can have in this set.
+   * @return the capacity.
+   */
+  public int getCapacity() {
+<span class="fc" id="L93">	  return _setCapacity;</span>
+  }
+  
+  /**
+   * Returns the size of the set, that is the number of elements it contains.
+   * @return The size.
+   */
+  public int getSize() {
+<span class="fc" id="L101">    return _indexLastElement+1;</span>
+  }
+
+  /**
+   * Returns the element from this set at a given index.
+   * @param i The index of the element we want.
+   * @return The element at index i.
+   */
+  public int getElementAt(int i) {
+<span class="fc bfc" id="L110" title="All 4 branches covered.">  	if ((i&lt;0)||(i&gt;_indexLastElement))</span>
+<span class="fc" id="L111">	  	return -1;</span>
+  	else
+<span class="fc" id="L113">	  	return _set[i];</span>
+  }
+  
+  /**
+   * Searches for an element in this set
+   * @param x The element we are looking for
+   * @return The index where the element has been found, -1 otherwise
+   */
+  public int find(int x) {
+<span class="fc" id="L122">  	int i=0;</span>
+<span class="fc" id="L123">	int j=_indexLastElement;</span>
+<span class="fc" id="L124">  	int m=0;</span>
+
+<span class="fc bfc" id="L126" title="All 2 branches covered.">  	if (_indexLastElement==-1)</span>
+<span class="fc" id="L127">	  	return -1;</span>
+
+<span class="fc bfc" id="L129" title="All 2 branches covered.">  	while(i&lt;j) {</span>
+<span class="fc" id="L130">	  	m= (i+j)/2;</span>
+<span class="fc bfc" id="L131" title="All 2 branches covered.">    	if (x&gt;_set[m])</span>
+<span class="fc" id="L132">		  	i=m+1;</span>
+  		else
+<span class="fc" id="L134">	  		j=m;</span>
+  	}
+<span class="fc bfc" id="L136" title="All 2 branches covered.">  	if (x == _set[i]) return i;</span>
+<span class="fc" id="L137">    else return -1;</span>
+  }
+
+  /**
+   * Computes the set difference between two sets
+   * @param The other set. 
+   * @return The result of this set minus the set passed as an argument
+   */
+  public OrdSetSimple difference(OrdSetSimple s2) {
+<span class="fc" id="L146">    OrdSetSimple s1 = this;</span>
+<span class="fc" id="L147">    OrdSetSimple newSet=new OrdSetSimple(s2.getSize());</span>
+<span class="fc bfc" id="L148" title="All 2 branches covered.">    for(int k=0; k&lt;s1.getSize(); k++)</span>
+<span class="fc bfc" id="L149" title="All 2 branches covered.">		if (s2.find(s1.getElementAt(k)) &lt; 0)</span>
+<span class="fc" id="L150">			newSet.addElement(s1.getElementAt(k));</span>
+<span class="fc" id="L151">    return newSet;</span>
+  }
+
+  /**
+   * Computes the union of two sets
+   * @param The other set
+   * @return The result of this set union (plus) the set passed as a parameter.
+   */
+  public OrdSetSimple union(OrdSetSimple s2) {
+<span class="fc" id="L160">	OrdSetSimple s1 = this;</span>
+<span class="fc" id="L161">	int size1 = s1.getSize();</span>
+<span class="fc" id="L162">	int size2 = s2.getSize();</span>
+		
+<span class="fc" id="L164">	OrdSetSimple newSet = new OrdSetSimple(size1 + size2);</span>
+		
+<span class="fc" id="L166">	int lb1 = 0, lb2 = 0, pos = 0;</span>
+<span class="fc bfc" id="L167" title="All 4 branches covered.">	while (lb1 &lt; size1 &amp;&amp; lb2 &lt; size2) {</span>
+<span class="fc bfc" id="L168" title="All 2 branches covered.">		if (s1.getElementAt(lb1) &lt; s2.getElementAt(lb2)) { </span>
+<span class="fc" id="L169">			newSet.addElement(s1.getElementAt(lb1));</span>
+<span class="fc" id="L170">			pos = pos + 1;</span>
+<span class="fc" id="L171">			lb1 = lb1 + 1;</span>
+<span class="fc bfc" id="L172" title="All 2 branches covered.">		} else if (s2.getElementAt(lb2) &lt; s1.getElementAt(lb1)) {</span>
+<span class="fc" id="L173">			newSet.addElement(s2.getElementAt(lb2));</span>
+<span class="fc" id="L174">			pos = pos + 1;</span>
+<span class="fc" id="L175">			lb2 = lb2 + 1;</span>
+<span class="pc bpc" id="L176" title="1 of 2 branches missed.">		} else if (s1.getElementAt(lb1) == s2.getElementAt(lb2)) {</span>
+<span class="fc" id="L177">			newSet.addElement(s2.getElementAt(lb2));</span>
+<span class="fc" id="L178">			pos = pos + 1;</span>
+<span class="fc" id="L179">			lb1 = lb1 + 1;</span>
+<span class="fc" id="L180">			lb2 = lb2 + 1;</span>
+		} else {
+<span class="nc" id="L182">			System.out.println(&quot;error in comparing elements in union.&quot;);</span>
+<span class="nc" id="L183">			System.exit(1);</span>
+		}
+	}	
+<span class="fc bfc" id="L186" title="All 2 branches covered.">	while (lb1 &lt; size1) {</span>
+<span class="fc" id="L187">		newSet.addElement(s1.getElementAt(lb1));</span>
+<span class="fc" id="L188">		pos = pos + 1;</span>
+<span class="fc" id="L189">		lb1 = lb1 + 1;</span>
+	}	
+<span class="fc bfc" id="L191" title="All 2 branches covered.">	while (lb2 &lt; size2) {</span>
+<span class="fc" id="L192">		newSet.addElement(s2.getElementAt(lb2));</span>
+<span class="fc" id="L193">		pos = pos + 1;</span>
+<span class="fc" id="L194">		lb2 = lb2 + 1;</span>
+	}
+<span class="fc" id="L196">	return newSet;</span>
+  }
+
+  /**
+   * Produces a string repsentation of this set with a '{' and a '}' starting and ending the string, and elements separated with spaces.
+   * @return The string representation
+   */
+  public String toString() {
+<span class="fc" id="L204">    String s=&quot;{ &quot;;</span>
+
+<span class="fc bfc" id="L206" title="All 2 branches covered.">    for (int k=0; k&lt;=_indexLastElement; k++)</span>
+<span class="fc" id="L207">  		s += _set[k] + &quot; &quot;;</span>
+<span class="fc" id="L208">    s += &quot;}&quot;;</span>
+<span class="fc" id="L209">    return s;</span>
+  }
+  
+  /**
+   * Determines whether two sets are equal, i.e., same elements.
+   * @param The other set 
+   * @return true if this set is equal to the set passed as an argument, false otherwise.
+   */
+  public boolean equals(OrdSetSimple s2) {
+<span class="fc" id="L218">		OrdSetSimple s1 = this;</span>
+		
+<span class="fc bfc" id="L220" title="All 2 branches covered.">		if (s1.getSize() != s2.getSize())</span>
+<span class="fc" id="L221">			return false;</span>
+		
+<span class="fc bfc" id="L223" title="All 2 branches covered.">		for (int n = 0; n &lt; s1.getSize(); n++) {</span>
+<span class="pc bpc" id="L224" title="1 of 2 branches missed.">			if (s1.getElementAt(n) != s2.getElementAt(n)) {</span>
+<span class="nc" id="L225">				return false;</span>
+			}
+		}
+<span class="fc" id="L228">		return true;</span>
+	}
+
+}
+
+
+
+
+ 
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202107230224</span></div></body></html>
