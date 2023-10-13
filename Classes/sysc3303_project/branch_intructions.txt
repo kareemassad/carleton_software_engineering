@@ -1,0 +1,48 @@
+To start working on each iteration's code a separate branch should be created
+first as follows:
+
+1. Make sure that working directory is clean by "git status"
+2. Makesure that you are at master branch by "git branch"
+3. Switch to master branch (if not there) "git checkout master", then do "git pull origin master" to
+make sure you have most recent version.
+4. When in master branch do "git checkout -b i#_xxx"  where # - iteration
+number, and xxxx is you name in small letters. For example: i1_igor  dont use capital letters
+5. that is it, do git branch to make sure you are in the corect branch.
+
+IMPORTANT: ALWAYS ALWAYS do "git status" before you start anything with git
+to figure out the state of your working directory. IT IS A MUST AND VERY
+IMPORTANT
+
+feel free to improve this instraction and make corretions 
+
+Instructions needed: please write here, what other instructions you guys would
+like to have.
+
+- How do we push the code to the repo after we're done with it?
+- After your commit/commits are done you again check the condition of the
+  working directory with "git status" 
+ if everything is okay you do "git push origin YOUR_BRANCH_name"
+
+One very useful git command is "git log"   (press q to escape)
+it shows you all previous commits.
+
+NOTICE:
+if you have occasionally commited into master instead of your branch due to
+non-switching you shoudl do the following.
+
+(!!!) Than will work only if you have not pushed into master.
+
+1. do "git reset HEAD~"  that will roll back to the state before your last commit
+2. then switch to your branch "git checkout -b YOUR_BRANCH"
+3. Do you commmit and push procedures
+
+Always do your "git status" to figure our where you are and what changes you
+are adding.
+
+Always add on per file basis i.e.  "git add FILE_NAME"
+
+
+Igor 
+
+
+

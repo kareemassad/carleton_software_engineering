@@ -1,0 +1,16 @@
+#lang racket
+;; Exercise 2
+;; numbers is list, n is int
+;; check with TA
+(define (occurrences numbers n)
+  (cond
+    ((empty? numbers) 0)
+    ((equal? n (first numbers))
+     (+ 1 (occurrences n (rest numbers))))
+    (else (occurrences n (rest numbers)))))
+
+(display "Testing average")
+(newline)
+(display "Expected: 3.5, actual: ")
+(average (list 1 2 3 4 5 6))
+(newline)

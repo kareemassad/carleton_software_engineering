@@ -1,0 +1,32 @@
+Deliverables
+1. What is the name of the default folders and files that appear in the Java project folder?
+In the project folder, the files that appear are:
+.idea folder
+out folder containing artifacts and production files (.class)
+src folder containing the .java files
+Lab1.iml
+Lab1.txt
+
+2. Name three default Java libraries included in a Java project by IntelliJ.
+java.base
+java.desktop
+java.compiler
+
+3. Copy-paste or screenshot of the code that appears in the BuddyInfo.java pane (Hello
+World implementation)
+
+public class BuddyInfo {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+
+
+4. The path where the file BuddyInfo.class lives
+Absolute path: C:\Users\Kareem\git\SYSC3110\out\production\SYSC3110\BuddyInfo.class
+Relative path: out/production/SYSC3110/BuddyInfo.class
+
+
+5. The JAR file containing your completed BuddyInfo class which has a main method that
+instantiates a buddyInfo object and displays “Hello” followed by the name of the
+buddyInfo object. This JAR file should contain BOTH the source file and the executable.

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Book
+comment0.text=\r\n\ A\ class\ that\ maintains\ information\ on\ a\ book.\r\n\ This\ might\ form\ part\ of\ a\ larger\ application\ such\r\n\ as\ a\ library\ system,\ for\ instance.\r\n\r\n\ @author\ (Insert\ your\ name\ here.)\r\n\ @version\ (Insert\ today's\ date\ here.)\r\n
+comment1.params=bookAuthor\ bookTitle
+comment1.target=Book(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Set\ the\ author\ and\ title\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getAuthor()
+comment3.params=
+comment3.target=java.lang.String\ getTitle()
+comment4.params=
+comment4.target=void\ printAuthor()
+comment5.params=
+comment5.target=void\ printTitle()
+numComments=6

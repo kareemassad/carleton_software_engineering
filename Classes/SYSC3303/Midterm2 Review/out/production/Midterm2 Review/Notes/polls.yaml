@@ -1,0 +1,462 @@
+'0':
+  Question: 'The following Communication Diagram represents:'
+  Possibilities:
+  - A Remote Procedure Call.
+  - Asynchronous two-way communication.
+  - A Monitor (Synchronized Method).
+  - An Asynchronous Remote Procedure Call.
+  - Asynchronous one-way communication.
+  Answer: Asynchronous one-way communication.
+'1':
+  Question: 'The following Communication Diagram represents:'
+  Possibilities:
+  - A Remote Procedure Call.
+  - Asynchronous two-way communication.
+  - A Monitor (Synchronized Method).
+  - An Asynchronous Remote Procedure Call.
+  - Asynchronous one-way communication.
+  Answer: A Monitor (Synchronized Method).
+'2':
+  Question: 'The following Communication Diagram represents:'
+  Possibilities:
+  - A Remote Procedure Call.
+  - Asynchronous two-way communication.
+  - A Monitor (Synchronized Method).
+  - An Asynchronous Remote Procedure Call.
+  - Asynchronous one-way communication.
+  Answer: An Asynchronous Remote Procedure Call.
+'3':
+  Question: 'The following Communication Diagram represents:'
+  Possibilities:
+  - A Remote Procedure Call. (Correct)
+  - Asynchronous two-way communication.
+  - A Monitor (Synchronized Method).
+  - An Asynchronous Remote Procedure Call.
+  - Asynchronous one-way communication.
+  Answer: A Remote Procedure Call.
+'4':
+  Question: 'The following Communication Diagram represents:'
+  Possibilities:
+  - A Remote Procedure Call.
+  - Asynchronous two-way communication. (Correct)
+  - A Monitor (Synchronized Method).
+  - An Asynchronous Remote Procedure Call.
+  - Asynchronous one-way communication.
+  Answer: Asynchronous two-way communication.
+'5':
+  Question: 'The synchronous message pattern (remote procedure call), when compared
+    to asynchronous messaging:'
+  Possibilities:
+  - copies more data.
+  - can lose buffers.
+  - has less parallelism.
+  Answer: has less parallelism.
+'6':
+  Question: A system where a top-level component coordinates the actions of control
+    components is which architectural pattern?
+  Possibilities:
+  - Client-Server
+  - Hierarchical (Correct)
+  - Master-Slave
+  - Distributed-Collaberative
+  - Layered
+  Answer: Hierarchical
+'7':
+  Question: A system where each controller is a peer to the others is which architectural
+    pattern?
+  Possibilities:
+  - Client-Server
+  - Hierarchical
+  - Master-Slave
+  - Distributed-Collaberative
+  - Layered
+  Answer: Distributed-Collaborative
+'8':
+  Question: The TCP/IP protocol is an example of which architectural pattern?
+  Possibilities:
+  - Client-Server
+  - Master-Slave
+  - Layered
+  - Distributed-Collaborative
+  - Hierarchical
+  Answer: Layered
+'9':
+  Question: 'A Design Anti-Pattern is:'
+  Possibilities:
+  - a small group of collaborating objects.
+  - a pattern that addresses the structure of major subsystems.
+  - a pattern that describes  similarities found during the analysis of different
+    problem domains.
+  - bad code seen again and again.
+  - a low-level pattern tailored to a specific programming language
+  Answer: bad code seen again and again.
+'10':
+  Question: 'An idiom is:'
+  Possibilities:
+  - a small group of collaborating objects.
+  - a pattern that addresses the structure of major subsystems.
+  - a pattern that describes  similarities found during the analysis of different
+    problem domains.
+  - bad code seen again and again.
+  - a low-level pattern tailored to a specific programming language (Correct)
+  Answer: a low-level pattern tailored to a specific programming language.
+'11':
+  Question: 'An Architectural Pattern is:'
+  Possibilities:
+  - a small group of collaborating objects.
+  - a pattern that addresses the structure of major subsystems. (Correct)
+  - a pattern that describes  similarities found during the analysis of different
+    problem domains.
+  - bad code seen again and again.
+  - a low-level pattern tailored to a specific programming language
+  Answer: a pattern that addresses the structure of major subsystems.
+'12':
+  Question: What is the opposite of green threads?
+  Possibilities:
+  - red threads
+  - magenta threads
+  - ungreen threads
+  - foreign threads
+  - native threads (Correct)
+  - threads that are not recycled are added to your carbon fottprint
+  - it's up to the JVM
+  Answer: native threads
+'13':
+  Question: What is/are the advantage(s) of green threads?
+  Possibilities:
+  - 1. the JVM has complete control over its threads
+  - "2. it\xE2\x80\x99s less work than having the O/S deal with the threads"
+  - 3. we can have as many Java thread priorities as we like
+  - 4. our Java threads will behave exactly the same regardless of O/S
+  - "it\xE2\x80\x99s up to the JVM"
+  - all of the above
+  - 2 and 3
+  - 1 and 4
+  Answer: 1 and 4
+'14':
+  Question: What are green threads?
+  Possibilities:
+  - when a JVM uses the underlying O/S threading system
+  - when a JVM provides its own thread package
+  - threads of priority higher than 5
+  - threads that are recycled and do not add to your carbon footprint
+  - "it\xE2\x80\x99s up to the JVM"
+  Answer: when a JVM provides its own thread package
+'15':
+  Question: When does the priority inversion become unbounded?
+  Possibilities:
+  - when medium priority threads also compete for the lock
+  - when an even higher priority thread needs the lock
+  - when two equal priority threads take turns
+  - when medium priority threads that do not need the lock also compete for the processor
+  - "it\xE2\x80\x99s up to the JVM"
+  Answer: when medium priority threads also compete for the lock also compete for
+    the processor
+'16':
+  Question: What is priority inversion?
+  Possibilities:
+  - when a higher priority thread takes the lock from a lower priority thread
+  - when a higher priority thread preempts a lower priority thread
+  - when two equal priority threads take turns
+  - when a higher priority thread has to wait because a lower priority thread has
+    the lock (Correct)
+  - "it\xE2\x80\x99s up to the JVM"
+  Answer: when a higher priority thread has to wait because a lower priority thread
+    had the lock
+'17':
+  Question: Assuming a uni-processor and that our JVM is using priority- based preemptive
+    scheduling with timeslicing, and we have 5 threads ready to run and no thread
+    currently running, which of the following threads will move to running? t1 (priority
+    3); t2 (prio 6); t3 (prio 8); t4 (prio 6); t5 (prio 8)
+  Possibilities:
+  - t1
+  - t2
+  - t3
+  - t4
+  - t5
+  - t2 or t4
+  - t3 or t5
+  Answer: t3 or t5
+'18':
+  Question: How many of our 10 Java priorities map onto the normal Win-32 priority
+    (THREAD_PRIORITY_NORMAL)?
+  Possibilities:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - n
+  - JVM's choice
+  Answer: '6'
+'19':
+  Question: What type of scheduling does the JVM use?
+  Possibilities:
+  - round-robin
+  - priority-based preemptive scheduling
+  - priority-based dispatch scheduling
+  - first-come, first served
+  - any of the above
+  - it's up to the JVM implementation to choose
+  Answer: priority-based preemptive scheduling
+'20':
+  Question: What are the thread priorities in Java?
+  Possibilities:
+  - 0 to 9 (integers)
+  - 1 to 9 (integers)
+  - 0 to 10 (integers)
+  - 1 to 10 (integers)
+  - '[0,10) (reals)'
+  - 0, 0.5, 1, ..., 9
+  - -10 to 10 (integers)
+  Answer: 1 to 10 (integers)
+'21':
+  Question: Which of the following keep the locks?
+  Possibilities:
+  - 1. wait()
+  - 2. sleep()
+  - 3. yield()
+  - 4. stop()
+  - 5. suspend()
+  - all of the above
+  - 2, 3 and 5
+  - 2, 3, 4 and 5
+  - 1 and 4
+  Answer: 2, 3 and 5
+'22':
+  Question: Under what circumstances can a thread leave the "Waiting" state?
+  Possibilities:
+  - 1. sleep time expires
+  - 2. notify()
+  - 3. notifyAll()
+  - 4. wait time expires
+  - 5. interrupt()
+  - 6. I/O complete
+  - all of the above
+  - 1-5
+  - 2-5
+  Answer: 2-5
+'23':
+  Question: How can a thread move from "Running" to "Ready to Run"?
+  Possibilities:
+  - 1. preempted
+  - 2. timeslice expires
+  - 3. dispatched
+  - 4. wait() returns
+  - 5. sleep() returns
+  - all of the above
+  - 1 and 2
+  - 1, 2 and 3
+  Answer: 1 and 2
+'24':
+  Question: How can a thread move from "Ready to Run" to "Running"?
+  Possibilities:
+  - 1. preempted
+  - 2. timeslice expires
+  - 3. dispatched
+  - 4. wait() returns
+  - 5. sleep() returns
+  - all of the above
+  - 1 and 2
+  - 1, 2 and 3
+  Answer: 3. dispatched
+'25':
+  Question: Why is it best to use thread.interrupt()?
+  Possibilities:
+  - "it\xE2\x80\x99s deprecated"
+  - we have to write two additional methods to get and set the interrupt flag
+  - as well as checking each time around our main "while" we can exit immediately
+    if sleeping or waiting
+  - "we will stop regardless of where we are in \"run\"\x9D"
+  Answer: as well as checking each time around our main "while" we can exit immediately
+    if sleeping or waiting
+'26':
+  Question: How do we know that wait timed out?
+  Possibilities:
+  - The timeout flag is set to true
+  - A WaitTimedOut exception is thrown
+  - We return from wait()
+  - The notified flag is set to false
+  - A ThreadNotified exception has not been thrown
+  - By checking the fields of our monitor object
+  Answer: By checking the fields of our monitor object
+'27':
+  Question: Why might we use wait with a timeout?
+  Possibilities:
+  - T o allow us to give up on being notified and do something else instead (Correct)
+  - To give our thread a higher priority
+  - So that we can busy-wait
+  - So that we have smaller critical sections
+  - So that we can send a notify to our self
+  Answer: T o allow us to give up on being notified and do something else instead
+'28':
+  Question: What is wrong with this code segment?
+  Possibilities:
+  - "\xE2\x80\x9Ca\xE2\x80\x9D should be box or buffer"
+  - someMethod must be synchronized
+  - We should notifyAll() not wait()
+  - it should be a.wait() not wait()
+  - "\xE2\x80\x9Ca\xE2\x80\x9Dmust be a Thread"
+  Answer: it should be a.wait() not wait()
+'29':
+  Question: What is a good example of Thread Hostile?
+  Possibilities:
+  - Box
+  - Thread.stop()
+  - ArrayList
+  - Integer
+  - A synchronized collection
+  - int
+  - Object
+  Answer: Thread.stop()
+'30':
+  Question: What is a good example of a Conditionally Thread-Safe class?
+  Possibilities:
+  - Box
+  - Thread.stop()
+  - ArrayList
+  - Integer
+  - A synchronized collection
+  - int
+  - Object
+  Answer: A synchronized collection
+'31':
+  Question: What is a good example of a Thread Compatible class?
+  Possibilities:
+  - Box
+  - Thread.stop()
+  - ArrayList
+  - Integer
+  - A synchronized collection
+  - int
+  - Object
+  Answer: ArrayList
+'32':
+  Question: What is a good example of an Immutable class?
+  Possibilities:
+  - Box
+  - Thread.stop()
+  - ArrayList
+  - Integer
+  - A synchronized collection
+  - int
+  - Object
+  Answer: Integer
+'33':
+  Question: What is a good example of a Thread-Safe class?
+  Possibilities:
+  - Box
+  - Thread.stop()
+  - ArrayList
+  - Integer
+  - A synchronized collection (Correct)
+  - int
+  - Object
+  Answer: A synchronized collection
+'34':
+  Question: What are the advantage(s) of a synchronized statement over a synchronized
+    method?
+  Possibilities:
+  - We may have smaller critical sections
+  - We eliminate all critical sections
+  - Condition synchronization is no longer needed
+  - We can synchronize on any object
+  - A and D (Correct)
+  - B and C
+  - All of the above
+  Answer: A and D
+'35':
+  Question: What are 3 ways of stopping a thread that we discussed in the lectures?
+  Possibilities:
+  - thread.stop()
+  - thread.wait()
+  - thread.suspend()
+  - thread.interrupt()
+  - thread.die()
+  - thread.kill()
+  - thread.resume()
+  - thread.sleep()
+  - thread.notifyAll()
+  - thread.stopRequested()
+  Answer: thread.stop(), thread.interrupt(), and thread.suspend()
+'36':
+  Question: Boundary objects are typically
+  Possibilities:
+  - passive
+  - undefined
+  - active
+  Answer: active
+'37':
+  Question: Entity objects are typically
+  Possibilities:
+  - active
+  - undefined
+  - passive
+  Answer: passive
+'38':
+  Question: Control objects are typically
+  Possibilities:
+  - passive
+  - active
+  - undefined
+  Answer: active
+'39':
+  Question: Which of the five choices below best defines the Liskov Substitution Principle?
+  Possibilities:
+  - objects in a program should be replaceable with instances of their subtypes without
+    altering the correctness of that program.
+  - many client-specific interfaces are bettern then one general-purpose interface.
+  - a class should only have a single responsibility, that is, only changes to one
+    part of the software's specification should be able to affect the specification
+    of the class.
+  - software entities ... should be open for extension, but closed for modification.
+  Answer: objects in a program should be replaceable with instances of their subtypes
+    without altering the correctness of that program.
+'40':
+  Question: Indicate whether an object of the class type can communicate with other
+    class types.
+  Possibilities:
+  - (this is the answer)
+  - Boundary objects communicate only with control objects.
+  - Control objects communicate with Control, Boundary, and Entity objects.
+  - Entity objects communicate only with Control and Entity objects.
+  Answer: 'TRUE'
+'41':
+  Question: Fill in the code
+  Possibilities:
+  - (question and answer)
+  - The following code implements a bounded buffer where items can be inserted using
+    addLast() until the buffer of
+  - capacity SIZE is full. Once the buffer is full, any other thread that calls addLast()
+    will wait until space becomes
+  - available.
+  - 'There are six instance variables:'
+  - 1. readable, to indicate that there are elements in the bounded buffer;
+  - 2. writeable, to indicate that there is space available in the bounded buffer;
+  - 3. count, to indicate the number of items in the buffer;
+  - 4. SIZE, to indicate the capacity of the buffer;
+  - 5. inIndex, to indicate the next position to store an item; and
+  - 6. outIndex, to indicate the next position to read an item.
+  - Fill in the missing elements in the code segment below for addLast(). Case matters
+    and do not enter any white space
+  - (spaces, tabs, etc) in any of the boxes.
+  - ''
+  - public synchronized void addLast(Object item) {
+  - '   while (writeable == false) {'
+  - '      try {'
+  - '         wait();'
+  - '      catch(InterruptedException e) {'
+  - '         System.err.println(e);'
+  - '      }'
+  - '   }'
+  - '   buffer[inIndex] = item;'
+  - '   readable = true;'
+  - '   inIndex = (inIndex+1) % SIZE;'
+  - '   count = count + 1;'
+  - '   if (count == SIZE) {'
+  - '      writable = false;'
+  - '   }'
+  - '   notifyAll();'
+  - '}'
+  Answer: 'TRUE'

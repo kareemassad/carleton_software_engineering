@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Comment
+comment0.text=\r\n\ This\ class\ represents\ a\ comment\ left\ for\ a\ sales\ item\ on\ an\ online\ sales\ site.\r\n\ A\ comment\ consists\ of\ a\ comment\ text,\ a\ rating,\ and\ an\ author\ name.\ Other\ users\r\n\ can\ indicate\ whether\ the\ comment\ was\ useful\ or\ not\ (called\ 'upvoting'\ or\ \r\n\ 'downvoting').\ The\ balance\ between\ upvotes\ and\ downvotes\ is\ stored\ with\ comments.\r\n\ A\ negative\ vote\ balance\ means\ that\ the\ comment\ received\ more\ downvotes\ than\ upvotes.\r\n\ \r\n\ @author\ Michael\ K\u00F6lling\ and\ David\ J.\ Barnes\r\n\ @version\ 2016.02.29\r\n
+comment1.params=author\ text\ rating
+comment1.target=Comment(java.lang.String,\ java.lang.String,\ int)
+comment1.text=\r\n\ Create\ a\ comment\ with\ all\ necessary\ details.\ The\ initial\ vote\ balance\ is\ 0.\r\n
+comment2.params=
+comment2.target=void\ upvote()
+comment2.text=\r\n\ Indicate\ that\ this\ comment\ is\ useful\ ('upvote').\ This\ is\ used\ when\ a\ reader\ clicks\r\n\ the\ 'Yes'\ button\ after\ the\ "Was\ this\ comment\ helpful?"\ quesion.\r\n
+comment3.params=
+comment3.target=void\ downvote()
+comment3.text=\r\n\ Indicate\ that\ this\ comment\ is\ not\ useful\ ('downvote').\ This\ is\ used\ when\ a\ reader\r\n\ clicks\ the\ 'No'\ button\ after\ the\ "Was\ this\ comment\ helpful?"\ quesion.\r\n
+comment4.params=
+comment4.target=java.lang.String\ getAuthor()
+comment4.text=\r\n\ Return\ the\ author\ of\ this\ comment.\r\n
+comment5.params=
+comment5.target=int\ getRating()
+comment5.text=\r\n\ Return\ the\ rating\ of\ this\ comment.\r\n
+comment6.params=
+comment6.target=int\ getVoteCount()
+comment6.text=\r\n\ Return\ the\ vote\ count\ (balance\ of\ up\ and\ down-votes).\r\n
+comment7.params=
+comment7.target=java.lang.String\ getFullDetails()
+comment7.text=\r\n\ Return\ the\ full\ text\ and\ details\ of\ the\ comment,\ including\ \r\n\ the\ comment\ text,\ author\ and\ rating.\r\n
+numComments=8

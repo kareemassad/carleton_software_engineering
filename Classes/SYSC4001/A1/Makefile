@@ -1,0 +1,2 @@
+A1: COLLATZ.c
+	gcc COLLATZ.c -o COLLATZ

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=EventPost
+comment0.text=\r\n\ @author\ Kareem\ El\ Assad\r\n\ @version\ 101107739\ \r\n
+comment1.params=author\ eventType
+comment1.target=EventPost(java.lang.String,\ java.lang.String)
+comment2.params=eventType
+comment2.target=void\ setEventType(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getEventType()
+comment4.params=post
+comment4.target=java.lang.String\ toString(Post)
+numComments=5

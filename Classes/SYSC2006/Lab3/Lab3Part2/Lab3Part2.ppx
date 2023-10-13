@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings version="1.0">
+	<category name="sput.h">
+		<category name="Window">
+			<property name="Left" type="integer">32</property>
+			<property name="Top" type="integer">32</property>
+			<property name="Right" type="integer">1472</property>
+			<property name="Bottom" type="integer">569</property>
+			<property name="Maximized" type="integer">0</property>
+			<property name="Active" type="integer">0</property>
+		</category>
+	</category>
+	<category name="main.c">
+		<category name="Window">
+			<property name="Left" type="integer">64</property>
+			<property name="Top" type="integer">64</property>
+			<property name="Right" type="integer">1504</property>
+			<property name="Bottom" type="integer">601</property>
+			<property name="Maximized" type="integer">0</property>
+			<property name="Active" type="integer">0</property>
+		</category>
+	</category>
+	<category name="composition.h">
+		<category name="Window">
+			<property name="Left" type="integer">96</property>
+			<property name="Top" type="integer">96</property>
+			<property name="Right" type="integer">1536</property>
+			<property name="Bottom" type="integer">633</property>
+			<property name="Maximized" type="integer">0</property>
+			<property name="Active" type="integer">0</property>
+		</category>
+	</category>
+	<category name="composition.c">
+		<category name="Window">
+			<property name="Left" type="integer">-9</property>
+			<property name="Top" type="integer">-38</property>
+			<property name="Right" type="integer">741</property>
+			<property name="Bottom" type="integer">715</property>
+			<property name="Maximized" type="integer">1</property>
+			<property name="Active" type="integer">1</property>
+		</category>
+	</category>
+</settings>

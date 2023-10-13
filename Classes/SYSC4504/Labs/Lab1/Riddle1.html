@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Computer Password Code</title>
+    <link rel="stylesheet" href="http://ramisabouni.com/escape_room/SYSC4504_lab1.css">
+</head>
+
+<body style="background-color: #fad9fd;">
+    <h1 style="text-align: center;">Computer Password</h1>
+    <pre style="margin: auto; border: 2px solid black; width: 435px;">
+        #include &lt;stdio.h&gt;
+        #include &lt;malloc.h&gt;
+        int* computer_password(char* last_name){
+            int* total = (int *) malloc(4 * sizeof(int));
+            for(int i =0, j=0;last_name[i] != '\0'; ++i){
+                if(i % 2 ==0){
+                    total[j] = last_name[i];
+                    j++;
+                }
+            }
+            return total;
+        }
+        int main(){
+            //Last Name = Stranger
+            //pass = 
+            int* answer = computer_password("&copy;&copy;&copy;&copy;&copy;&copy;&copy;&copy;");
+            for (int i = 0; i &lt; 4; i++){
+                printf("%i", answer[i]);
+            }
+            free(answer);
+        }
+    </pre>
+    <h3 style="color: #f133f1;">Password is: ???</h3>
+</body>
+
+</html>

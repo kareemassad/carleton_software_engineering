@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Microsoft_logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+    <title>XBOX Fan Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Microsft Xbox</h1>
+        <h2>by: Kareem El Assad</h2>
+        <h2>Date: 2023-01-23</h2>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="https://www.xbox.com/en-GB/">Company Website</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <form method="post" action="https://ramisabouni.com/sysc4504/Lab03_process.php" id="based">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <label>Enter your email: </label>
+            <input type="email" name="email_address" id="based">
+
+            <div class="provinces">
+                <label class="provinces">Choose your province: </label>
+                <select name="province" class="dropper">
+                    <option class="dropper" value="ON">ON</option>
+                    <option class="dropper" value="QC">QC</option>
+                    <option class="dropper" value="NS">NS</option>
+                    <option class="dropper" value="NB">NB</option>
+                    <option class="dropper" value="MB">MB</option>
+                    <option class="dropper" value="BC">BC</option>
+                    <option class="dropper" value="PE">PC</option>
+                    <option class="dropper" value="SK">SK</option>
+                    <option class="dropper" value="AB">AB</option>
+                    <option class="dropper" value="NL">NL</option>
+                    <option class="dropper" value="NT">NT</option>
+                    <option class="dropper" value="YT">YT</option>
+                    <option class="dropper" value="NU">NU</option>
+                </select>
+            </div>
+
+            <div class="radios">
+                <label for="based">Reason for contacting us</label>
+                <div class="inner-radios">
+                    <input type="radio" name="reason" value="question" id="based">Billing
+                    <br>
+                    <input type="radio" name="reason" value="question" id="based">General Enquiry
+                    <br>
+                    <input type="radio" name="reason" value="question" id="based">Technical Issue
+                    <br>
+                    <input type="radio" name="reason" value="question" id="based">Track Shipment
+                    <br>
+                    <input type="radio" name="reason" value="question" id="based">Other
+                </div>
+                <textarea name="question" id="based" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="based">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

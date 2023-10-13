@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SYSC4504 - Fundamentals of Web Development</title>
+	<!-- <link rel="stylesheet" href="assets/css/style_example.css"> -->
+	<script src="JS_Lecture.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>SYSC4504 - Fundamentals of Web Development</h1>
+		<h2> Lecture 08 </h2>
+		<h3>Introduction to JavaScript <time>(12-01-2023)</time></h3>
+		<style>
+			.js-examples {
+				border: solid 2px black;
+				text-align: center;
+				background-color: rgb(238, 237, 237);
+				margin: 10px;
+				padding: 5px;
+			}
+
+			.js-examples>h3 {
+				margin: 0;
+				padding: 5px;
+				font-size: 30px;
+				color: darkblue;
+			}
+
+			.js-examples>h4 {
+				font-size: 28px;
+				text-align: left;
+				color: darkred;
+			}
+
+			.js-examples>h5 {
+				font-size: 25px;
+				text-align: left;
+				text-decoration: solid underline;
+				color: rgb(77, 0, 77);
+			}
+
+			.js-examples span {
+				display: inline-block;
+				font-size: 25px;
+				color: purple;
+				text-decoration: none;
+			}
+		</style>
+	</header>
+
+	<!-- Since this div is the main part of the document, I can replace it with <main></main>-->
+	<main>
+		<div class="js-examples">
+			<h3>Example 1:</h3>
+			<p>
+				<span>
+					<script>
+						/*alert("Test");
+						console.log(prompt("Test"));
+						confirm("Test");
+						*/
+						let def = new Date();
+						document.write(def);
+					</script>
+				</span>
+			</p>
+		</div>
+
+		<div class="js-examples">
+			<h3>Example 2:</h3>
+			<h4>&nbsp;The BMR is:
+				<span>
+					<script>
+						document.write(myApplication1());
+					</script>
+				</span>
+			</h4>
+		</div>
+
+		<!--
+				<div class="js-examples">
+				<h3>Example 3:</h3>
+				<h4>&nbsp;The BMR is:
+					<span>
+						<script>
+							document.write(myApplication2());
+						</script>
+					</span>
+				</h4>
+			</div>
+
+			
+			<div class="js-examples">
+				<h3>Example 4:</h3>
+				<h4>&nbsp;The BMR is:
+					<span>
+						<script>
+							document.write(myApplication3());
+						</script>
+					</span>
+				</h4>
+			</div>
+
+
+			<div class="js-examples">
+				<h3>Example 5:</h3>
+				<h4>&nbsp;The BMR is:
+					<span>
+						<script>
+							document.write(myApplication1());
+						</script>
+					</span>
+				</h4>
+				<h4>&nbsp;The number of calories burnt for different activity levels:</h4>
+				<script>
+					let levels = ["Sedentary", "Light", "Moderately", "Very", "Extra", "anything"];
+					let BMR = myApplication1();
+					for (let i = 0; i < 6; i++){
+						document.write("<h5>"+levels[i]+":<span>&nbsp"+ BMR * avtivityLevel(levels[i]) + "</span></h5>");
+					}
+				</script>
+				<hr>
+				<h4>&nbsp;The number of calories burnt for different activity levels:</h4>
+				<script>
+					for (let lvl of levels){
+						document.write("<h5>"+lvl+":<span>&nbsp"+ BMR * avtivityLevel(lvl) + "</span></h5>");
+					}
+				</script>
+			</div>
+			-->
+	</main>
+</body>
+
+</html>

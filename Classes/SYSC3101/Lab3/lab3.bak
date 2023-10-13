@@ -1,0 +1,12 @@
+#lang racket
+
+;; Exercise 1
+
+(define (increment x) (+ x 1))
+(define (incrementDouble x) (+ x 2))
+(define (incrementRationals x) (/ 1 x))
+
+(build-list 5 increment)
+
+(define (build-naturals) n
+  (build-list n increment))

@@ -1,0 +1,295 @@
+{
+    "currency": "ل.ل.",
+    "tiles": [
+        {
+            "id":0,
+            "name":"بداية",
+            "price": 0,
+            "type": "go"
+        },
+        {
+            "id" : 1,
+            "name":"بعبدا",
+            "type": "property",
+            "price": 60,
+            "owner": null,
+            "color": "brown"
+        },
+        {
+            "id" : 2,
+            "name":"صندوق",
+            "price": 0,
+            "type": "special"
+        },
+        {
+            "id" : 3,
+            "name":"عاليه",
+            "type": "property",
+            "price": 60,
+            "owner": null,
+            "color": "brown"
+        },
+        {
+            "id" : 4,
+            "name":"ضريبة الشيشة",
+            "type": "tax",
+            "price": 200
+        },
+        {
+            "id" : 5,
+            "name":"قصر بيت الدين",
+            "type": "station",
+            "price": 200,
+            "owner": null
+        },
+        {
+            "id" : 6,
+            "name":"فيلا محمد صلاح",
+            "type": "property",
+            "price": 100,
+            "owner": null,
+            "color": "lightblue"
+        },
+        {
+            "id" : 7,
+            "name":"فرصة",
+            "price": 0,
+            "type": "special"
+        },
+        {
+            "id" : 8,
+            "name":"جزين",
+            "type": "property",
+            "price": 100,
+            "owner": null,
+            "color": "lightblue"
+        },
+        {
+            "id" : 9,
+            "name":"مجدليون",
+            "type": "property",
+            "price": 120,
+            "owner": null,
+            "color": "lightblue"
+        },
+        {
+            "id" : 10,
+            "name":"حبس / الزيارة",
+            "price": 0,
+            "type": "jail"
+        },
+        {
+            "id" : 11,
+            "name":"تولا",
+            "type": "property",
+            "price": 140,
+            "owner": null,
+            "color": "pink"
+        },
+        {
+            "id" : 12,
+            "name":"كهرباء",
+            "type": "utility",
+            "price": 100,
+            "owner": null
+        },
+        {
+            "id" : 13,
+            "name":"فيطرون",
+            "type": "property",
+            "price": 150,
+            "owner": null,
+            "color": "pink"
+        },
+        {
+            "id" : 14,
+            "name":"مغارة جعيتا",
+            "type": "property",
+            "price": 160,
+            "owner": null,
+            "color": "pink"
+        },
+        {
+            "id" : 15,
+            "name" : "قلعة محمد صلاح",
+            "type": "station",
+            "price": 200,
+            "owner": null
+        },
+        {
+            "id" : 16,
+            "name":"جونية",
+            "type": "property",
+            "price": 180,
+            "owner": null,
+            "color": "orange"
+        },
+        {
+            "id" : 17,
+            "name":"صندوق",
+            "price": 0,
+            "type": "special"
+        },
+        {
+            "id" : 18,
+            "name":"البترون",
+            "type": "property",
+            "price": 180,
+            "owner": null,
+            "color": "orange"
+        },
+        {
+            "id" : 19,
+            "name":"انفه",
+            "type": "property",
+            "price": 200,
+            "owner": null,
+            "color": "orange"
+        },
+        {
+            "id" : 20,
+            "name":"موقف سيارات",
+            "price": 0,
+            "type": "free"
+        },
+        {
+            "id" : 21,
+            "name":"قرطبا",
+            "type": "property",
+            "price": 220,
+            "owner": null,
+            "color": "red"
+        },
+        {
+            "id" : 22,
+            "name":"فرصة",
+            "price": 0,
+            "type": "special"
+        },
+        {
+            "id" : 23,
+            "name":"بعلبك",
+            "type": "property",
+            "price": 220,
+            "owner": null,
+            "color": "red"
+        },
+        {
+            "id" : 24,
+            "name":"زحلة",
+            "type": "property",
+            "price": 240,
+            "owner": null,
+            "color": "red"
+        },
+        {
+            "id" : 25,
+            "name":"عنجر",
+            "type": "station",
+            "price": 200,
+            "owner": null
+        },
+        {
+            "id" : 26,
+            "name" : "كفريا",
+            "type" : "property",
+            "price" : 260,
+            "owner" : null,
+            "color" : "yellow"
+        },
+        {
+            "id" : 27,
+            "name" : "أرز",
+            "type" : "property",
+            "price" : 260,
+            "owner" : null,
+            "color" : "yellow"
+        },
+        {
+            "id" : 28,
+            "name" : "توصيل المياه",
+            "type" : "utility",
+            "price" : 150,
+            "owner" : null
+        },
+        {
+            "id" : 29,
+            "name" : "فاريا",
+            "type" : "property",
+            "price" : 280,
+            "owner" : null,
+            "color" : "yellow"
+        },
+        {
+            "id" : 30,
+            "name" : "اذهب للحبس",
+            "price": 0,
+            "type" : "jail"
+        },
+        {
+            "id" : 31,
+            "name" : "طرابلس",
+            "type" : "property",
+            "price" : 300,
+            "owner" : null,
+            "color" : "green"
+        },
+        {
+            "id" : 32,
+            "name" : "صيدا",
+            "type" : "property",
+            "price" : 300,
+            "owner" : null,
+            "color" : "green"
+        },
+        {
+            "id" : 33,
+            "name" : "صندوق",
+            "price": 0,
+            "type" : "special"
+        },
+        {
+            "id" : 34,
+            "name" : "صور",
+            "type" : "property",
+            "price" : 320,
+            "owner" : null,
+            "color" : "green"
+        },
+        {
+            "id" : 35,
+            "name" : "قلعة موسى",
+            "type" : "station",
+            "price" : 200,
+            "owner" : null
+        },
+        {
+            "id" : 36,
+            "name" : "فرصة",
+            "price": 0,
+            "type" : "special"
+        },
+        {
+            "id" : 37,
+            "name" : "جبيل",
+            "type" : "property",
+            "price" : 350,
+            "owner" : null,
+            "color" : "darkblue"
+        },
+        {
+            "id" : 38,
+            "name" : "سوبر ضريبة",
+            "price": 0,
+            "type" : "tax"
+        },
+        {
+            "id" : 39,
+            "name" : "بيروت",
+            "type" : "property",
+            "price" : 400,
+            "owner" : null,
+            "color" : "darkblue"
+        }
+    ]
+}

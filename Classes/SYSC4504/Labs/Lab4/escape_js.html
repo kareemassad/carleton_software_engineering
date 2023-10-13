@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Xbox Fan page</title>
+	<link rel="icon" href="images/Microsoft_logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<style>
+		#image-container {
+			display: block;
+			position: relative;
+			z-index: -1;
+			margin-bottom: 450px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		#background-image {
+			width: 400px;
+			height: 300px;
+			position: absolute;
+			border: solid 2px black;
+		}
+
+		#first-image {
+			width: 400px;
+			height: 300px;
+			position: absolute;
+			opacity: 0;
+			border: solid 2px black;
+			/* this needs to be changed using JavaScript */
+		}
+
+		#second-image {
+			width: 400px;
+			height: 300px;
+			position: absolute;
+			opacity: 0;
+			border: solid 2px black;
+			/* this needs to be changed using JavaScript */
+		}
+
+		form {
+			width: fit-content;
+		}
+	</style>
+
+	<script src="assets/js/escape_room.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<h1> Microsoft Xbox</h1>
+		<h3><strong>by:</strong> Rami Sabouni</h3>
+		<h4><time datetime="2023-01-17 00:00">2023-01-17</time></h4>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home page</a></li>
+			<li><a href="catalog.html">Catalog</a></li>
+			<li><a
+					href="https://www.microsoft.com/en-ca/store/b/xbox?&ef_id=Cj0KCQiAq5meBhCyARIsAJrtdr5MuI4OtgoHCwDJPJa2BuYjLAh2WX4JQUdAyr2Ze60O_1WQzx7XLIMaAnttEALw_wcB:G:s&s_kwcid=AL!4249!3!632059102219!e!!g!!xbox!12583000008!142322634159&ef_id=Cj0KCQiAq5meBhCyARIsAJrtdr5MuI4OtgoHCwDJPJa2BuYjLAh2WX4JQUdAyr2Ze60O_1WQzx7XLIMaAnttEALw_wcB:G:s&OCID=AIDcmm9gatb6un_SEM_Cj0KCQiAq5meBhCyARIsAJrtdr5MuI4OtgoHCwDJPJa2BuYjLAh2WX4JQUdAyr2Ze60O_1WQzx7XLIMaAnttEALw_wcB:G:s&gclid=Cj0KCQiAq5meBhCyARIsAJrtdr5MuI4OtgoHCwDJPJa2BuYjLAh2WX4JQUdAyr2Ze60O_1WQzx7XLIMaAnttEALw_wcB">Company
+					website</a></li>
+			<li><a href="contact.html">Contact us</a></li>
+			<li><a class="active" href="escape_js.html">Escape Room</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<h2>This is the escape room JavaScript code</h2>
+			<div id="image-container">
+				<img id="background-image" src="images/riddle3_image1.png" alt="riddle3_image1.png">
+				<img id="first-image" src="images/riddle3_image2.png" alt="riddle3_image2.png">
+				<img id="second-image" src="images/riddle3_image3.png" alt="riddle3_image3.png">
+			</div>
+
+			<!-- Escape Room Image control -->
+
+			<form>
+				<fieldset>
+					<legend>Image controls</legend>
+					<table>
+						<tr>
+							<th colspan="2">The opacity of the first image</th>
+						</tr>
+						<tr>
+							<td><input type="range" min="0.2" max="0.7" step="0.05" name="first-image" value="0.2"
+									id="image1Control"></td>
+							<td><input type="text" id="image1Opacity"></td>
+						</tr>
+						<tr>
+							<th colspan="2">The opacity of the second image</th>
+						</tr>
+						<tr>
+							<td><input type="range" min="0.2" max="0.7" step="0.05" name="second-image" value="0.2"
+									id="image2Control"></td>
+							<td><input type="text" id="image2Opacity"></td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+			<!-- Escape Room Image control -->
+
+		</section>
+
+	</main>
+	<footer>Copyright &copy; Rami Sabouni - Carleton University <a
+			href="mailto:ramisabouni@cunet.Carleton.ca">ramisabouni@cunet.Carleton.ca</a></footer>
+</body>
+
+</html>

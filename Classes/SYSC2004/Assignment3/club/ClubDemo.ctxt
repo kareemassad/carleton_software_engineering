@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ClubDemo
+comment0.text=\r\n\ Provide\ a\ demonstration\ of\ the\ Club\ and\ Membership\r\n\ classes.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=ClubDemo()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ ClubDemo\r\n
+comment2.params=
+comment2.target=void\ demo()
+comment2.text=\r\n\ Add\ some\ members\ to\ the\ club,\ and\ then\r\n\ show\ how\ many\ there\ are.\r\n\ Further\ example\ calls\ could\ be\ added\ if\ more\ functionality\r\n\ is\ added\ to\ the\ Club\ class.\r\n
+numComments=3

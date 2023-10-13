@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Register on SYSCBOOK</title>
+   <link rel="stylesheet" href="assets/css/reset.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+   <header>
+      <h1>SYSCBOOK</h1>
+      <p>Social media for SYSC students in Carleton University</p>
+   </header>
+   <table class="main-table">
+      <tr>
+         <td class="navbar">
+            <ul>
+               <li><a class="active" href="index.html">Home</a></li>
+               <li><a href="profile.html">Profile</a></li>
+               <li><a href="register.html">Register</a></li>
+               <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log Out</a></li>
+            </ul>
+         </td>
+         <td class="align-body">
+            <section>
+               <h2>Register a new profile</h2>
+               <form method="post" action="https://ramisabouni.com/sysc4504/process_register.php">
+                  <fieldset>
+                     <div class="section-content">
+                        <legend>
+                           <p>Personal information</p>
+                        </legend>
+                        <table>
+                           <tr>
+                              <td class="textbox">
+                                 <label>First Name:</label>
+                                 <input type="text" name="first_name">
+                              </td>
+                              <td class="textbox">
+                                 <label>Last Name:</label>
+                                 <input type="text" name="last_name">
+                              </td>
+                              <td class="textbox">
+                                 <label>DOB:</label>
+                                 <input type="date" name="DOB">
+                              </td>
+                           </tr>
+                        </table>
+                        <legend>
+                           <p>Profile Information</p>
+                        </legend>
+                        <table>
+                           <tr>
+                              <td class="textbox">
+                                 <label for="email">Email:</label>
+                                 <input type="email" id="email" name="student_email">
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="textbox">
+                                 <label>Program:</label>
+                                 <select name="Program">
+                                    <option value="Choose">Choose Program</option>
+                                    <option value="COMPENG">Computer Systems Engineering</option>
+                                    <option value="Software">Software Engineering</option>
+                                    <option value="Comms">Communication Engineering</option>
+                                    <option value="BioElec">Biomedical and Electrical</option>
+                                    <option value="Elec">Electrical Engineering</option>
+                                    <option value="Special">Special</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="textbox">
+                                 <table class="button-spacing">
+                                    <tr>
+                                       <!-- add two buttons, submit and reset -->
+                                       <td>
+                                          <input class="s-r-buttons" type="submit" value="Register">
+                                       </td>
+                                       <td>
+                                          <input class="s-r-buttons" type="reset" value="Reset">
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </fieldset>
+               </form>
+            </section>
+         </td>
+      </tr>
+   </table>
+</body>
+
+</html>

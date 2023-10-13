@@ -1,0 +1,820 @@
+"0":
+  question: Activity title
+  answer: Your response
+"1":
+  question: What are the names of the two Java classes that implement UDP?
+  answer: DatagramSocket and DatagramPacket
+"2":
+  question: What is the name of the Java class that implements an IP address?
+  answer: InetAddress
+"3":
+  question: Where would carrier pigeons fit on this image?
+  answer: Application
+"4":
+  question: Where would carrier pigeons fit on this image?
+  answer: Application
+"5":
+  question: What is the name of a message passed between the UDP and IP layers?
+  answer: UDP Datagram
+"6":
+  question: What is the name of a message passed between the UDP and IP layers?
+  answer: UDP Datagram
+"7":
+  question: What is the name of a message passed between the UDP and IP layers?
+  answer: UDP Datagram
+"8":
+  question: What is the name of a message passed between the TCP and IP layers?
+  answer: TCP Segment
+"9":
+  question: What is the name of a message passed between the TCP and IP layers?
+  answer: TCP Segment
+"10":
+  question: What is the name of a message passed between the TCP and IP layers?
+  answer: TCP Segment
+"11":
+  question:
+    What is the name of a message passed between the physical (network hardware)
+    layer and the data link (network interface) layer?
+  answer: 1. Frame
+"12":
+  question:
+    What is the name of a message passed between the physical (network hardware)
+    layer and the data link (network interface) layer?
+  answer: 1. Frame
+"13":
+  question:
+    What is the name of a message passed between the physical (network hardware)
+    layer and the data link (network interface) layer?
+  answer: 1. Frame
+"14":
+  question:
+    What is the name of a message passed between the internet layer and the
+    datalink (network interface) layer?
+  answer: 2. Transport Protocol Packet
+"15":
+  question:
+    What is the name of a message passed between the internet layer and the
+    datalink (network interface) layer?
+  answer: 2. Transport Protocol Packet
+"16":
+  question:
+    What is the name of a message passed between the internet layer and the
+    datalink (network interface) layer?
+  answer: 2. Transport Protocol Packet
+"17":
+  question:
+    What is the name of a message passed between the internet layer and the
+    transport layer?
+  answer: 2 and 4
+"18":
+  question:
+    What is the name of a message passed between the internet layer and the
+    transport layer?
+  answer: 2 and 4
+"19":
+  question:
+    What is the name of a message passed between the internet layer and the
+    transport layer?
+  answer: 2 and 4
+"20":
+  question:
+    What is the name of a message passed between the application layer and
+    the transport layer?
+  answer: 3 and 5
+"21":
+  question:
+    What is the name of a message passed between the application layer and
+    the transport layer?
+  answer: 3 and 5
+"22":
+  question:
+    What is the name of a message passed between the application layer and
+    the transport layer?
+  answer: 3 and 5
+"23":
+  question: What are the characteristics of UDP?
+  answer: Connectionless & unreliable
+"24":
+  question: What are the characteristics of UDP?
+  answer: Connectionless & unreliable
+"25":
+  question: What are the characteristics of UDP?
+  answer: Connectionless & unreliable
+"26":
+  question: What is the main difference between IP and UDP?
+  answer: UDP identifies a port and IP a computer
+"27":
+  question: What is the main difference between IP and UDP?
+  answer: UDP identifies a port and IP a computer
+"28":
+  question: What is the main difference between IP and UDP?
+  answer: UDP identifies a port and IP a computer
+"29":
+  question: What are the characteristics of TCP?
+  answer: Virtual connection & reliable
+"30":
+  question: What are the characteristics of TCP?
+  answer: Virtual connection & reliable
+"31":
+  question: What are the characteristics of TCP?
+  answer: Virtual connection & reliable
+"32":
+  question: What are the characteristics of IP?
+  answer: Virtual connection & unreliable
+"33":
+  question: What are the characteristics of IP?
+  answer: Virtual connection & unreliable
+"34":
+  question: What are the characteristics of IP?
+  answer: Virtual connection & unreliable
+"35":
+  question: What layer does HTTP implement?
+  answer: Application
+"36":
+  question: What layer does UDP implement?
+  answer: Transport
+"37":
+  question: What layer does TCP implement?
+  answer: Transport
+"38":
+  question: What layer does TCP implement?
+  answer: Transport
+"39":
+  question: What layer does TCP implement?
+  answer: Transport
+"40":
+  question: What is the bottom layer of the 5 layer protocol stack?
+  answer: Physical
+"41":
+  question: What is the bottom layer of the 5 layer protocol stack?
+  answer: Physical
+"42":
+  question: What is the bottom layer of the 5 layer protocol stack?
+  answer: Physical
+"43":
+  question: What is the second from the bottom layer of the 5 layer protocol stack?
+  answer: Data Link
+"44":
+  question: What is the second from the bottom layer of the 5 layer protocol stack?
+  answer: Data Link
+"45":
+  question: What is the second from the bottom layer of the 5 layer protocol stack?
+  answer: Data Link
+"46":
+  question: What is the middle layer of the 5 layer protocol stack?
+  answer: Internet
+"47":
+  question: What is the middle layer of the 5 layer protocol stack?
+  answer: Internet
+"48":
+  question: What is the middle layer of the 5 layer protocol stack?
+  answer: Internet
+"49":
+  question: What is the second from the top layer of the 5 layer protocol stack?
+  answer: Transport
+"50":
+  question: What is the top (most abstract) layer of the 5 layer protocol stack?
+  answer: Application
+"51":
+  question: What does TFTP stand for?
+  answer: Trivial File Transfer Protocol
+"52":
+  question: What does UDP stand for?
+  answer: User Datagram Protocol
+"53":
+  question: What does TCP stand for?
+  answer: Transmission Control Protocol
+"54":
+  question: In the context of this course, what does IP stand for?
+  answer: Internet Protocol
+"55":
+  question: Can we use notify() instead of notifyAll() in our Box class?
+  answer: sometimes
+"56":
+  question: Can we use notify() instead of notifyAll() in our Box class?
+  answer: sometimes
+"57":
+  question: Can we use notify() instead of notifyAll() in our Box class?
+  answer: sometimes
+"58":
+  question: When can we use notify() instead of notifyAll()?
+  answer:
+    When all threads are waiting for the same condition and at most one can
+    benefit
+"59":
+  question: When can we use notify() instead of notifyAll()?
+  answer:
+    When all threads are waiting for the same condition and at most one can
+    benefit
+"60":
+  question: When can we use notify() instead of notifyAll()?
+  answer:
+    When all threads are waiting for the same condition and at most one can
+    benefit
+"61":
+  question:
+    Which of the thread(s) shown must currently have or have had the processor
+    at some time in the execution of this program?
+  answer: all of them
+"62":
+  question:
+    Which of the thread(s) shown must currently have or have had the processor
+    at some time in the execution of this program?
+  answer: all of them
+"63":
+  question:
+    Which of the thread(s) shown must currently have or have had the processor
+    at some time in the execution of this program?
+  answer: all of them
+"64":
+  question:
+    Assuming a uni-processor, what thread currently has the processor and
+    is executing?
+  answer: p1 or another thread not pictured
+"65":
+  question: Which thread gets the lock after p1 releases  it?
+  answer: p1 or p2
+"66":
+  question: What happens when p1 finishes executing the synchronized method?
+  answer: p1 disappears from the diagram
+"67":
+  question: What happens when p1 finishes executing the synchronized method?
+  answer: p1 disappears from the diagram
+"68":
+  question: What happens when p1 finishes executing the synchronized method?
+  answer: p1 disappears from the diagram
+"69":
+  question: What happens if p1 invokes notify()?
+  answer: One of c2 or c1 moves to the left oval
+"70":
+  question: What happens if p1 invokes notify()?
+  answer: One of c2 or c1 moves to the left oval
+"71":
+  question: What happens if p1 invokes notify()?
+  answer: One of c2 or c1 moves to the left oval
+"72":
+  question: What happens if p1 invokes notifyAll()?
+  answer: c1 and c2 move to the left oval
+"73":
+  question: What happens if p1 invokes notifyAll()?
+  answer: c1 and c2 move to the left oval
+"74":
+  question: What happens if p1 invokes notifyAll()?
+  answer: c1 and c2 move to the left oval
+"75":
+  question: What is the purpose of the wait loop idiom?
+  answer: Condition variables.
+"76":
+  question: In what context should we always put "wait()"?
+  answer: 1. Inside a try/catch block for InterruptedException
+"77":
+  question: In what context should we always put "wait()"?
+  answer: 3. Inside a while statement
+"78":
+  question: In what context should we always put "wait()"?
+  answer: 1 and 3
+"79":
+  question: Where can we use the wait() method?
+  answer: In any synchronized method
+"80":
+  question:
+    What does it mean if we have a class with 3 methods, all of which are
+    synchronized?
+  answer: At most 3 threads can access each instance of the class at the same time
+"81":
+  question: How do we implement condition synchronization in Java?
+  answer: The synchronized keyword in a method header
+"82":
+  question: How do we implement mutual exclusion in Java?
+  answer: The synchronized keyword in a method header
+"83":
+  question: How do we implement mutual exclusion in Java?
+  answer: Condition variables
+"84":
+  question: What is the purpose of condition synchronization?
+  answer: To protect critical sections
+"85":
+  question: What is the purpose of condition synchronization?
+  answer: To ensure that only one thread runs at a time
+"86":
+  question: What is the purpose of mutual exclusion?
+  answer: (an image)
+"87":
+  question: What is the purpose of mutual exclusion?
+  answer: To protect critical sections
+"88":
+  question: What are the two types of thread synchronization studied in this course?
+  answer: Mutual Exclusion and Condition Synchronization
+"89":
+  question:
+    If we have created several Java threads in "main", which thread or threads
+    are actually running at any given time?
+  answer:
+    Whichever thread or threads have been chosen by the scheduler based on the
+    processor(s) available
+"90":
+  question: If we have created several Java threads in "main", when will our "main" program end?
+  answer: When the main function returns
+"91":
+  question: If we have created several Java threads in "main", when will our "main" program end?
+  answer: Never -- it will run forever
+"92":
+  question: If we have created several Java threads in "main", when will our program end?
+  answer: When the main function returns
+"93":
+  question: If we have created several Java threads in "main", when will our program end?
+  answer: Never -- it will run forever
+"94":
+  question: Why can't we always Extend Thread to create our new class?
+  answer: We may want to extend another class and Java only has single inheritance
+"95":
+  question: Why can't we always Extend Thread to create our new class?
+  answer:
+    We can -- the second way is just to make life more confusing (and quizzes
+    more difficult)!
+"96":
+  question: What does it mean to "Implement Runnable"
+  answer: Our new class implements the Runnable interface
+"97":
+  question: What does it mean to "Extend Thread"
+  answer: Our new class is a subclass of the Thread class
+"98":
+  question: "There are two ways to create a thread, they are:"
+  answer:
+    Implement Runnable, Extend Thread, Extend Object, Extend Runnable, Implement
+    Thread, Implement Object
+"99":
+  question: What type of threads are created directly by the programmer in Java?
+  answer: User, Non-Deamon, Non-Demon, Deamon, Luser, Demon
+"100":
+  question: What is the best way to handle "Cancel"
+  answer: Hierarchical state machine
+"101":
+  question: How should you handle states that need timeouts?
+  answer:
+    With state entry/exit actions and a transition that loops back to the original
+    state
+"102":
+  question: How should you handle interactions with the bank?
+  answer: Action
+"103":
+  question: How should you handle output to the display?
+  answer: Action
+"104":
+  question: How many states are required for the main sequence?
+  answer: about 10
+"105":
+  question:
+    How many instance variables would you need assuming that you would use
+    a traditional finite automata?
+  answer: "3"
+"106":
+  question: How many instance variables would you need to code an extended state machine?
+  answer: 4 or more
+"107":
+  question: Why would we use an extended state machine for this use case?
+  answer: Why would I?  I can code it in about 10 states as is.
+"108":
+  question: What is NOT an input to the state machine
+  answer: bank communication
+"109":
+  question: Which is the best example of a soft real-time system
+  answer: ATM machine
+"110":
+  question: Which is the best example of a soft real-time system
+  answer: Solitaire game
+"111":
+  question: What best characterizes a soft real-time system
+  answer: Deadlines must be met most of the time
+"112":
+  question: Which is the best example of a hard real-time system
+  answer: ABS braking system
+"113":
+  question: What best characterizes a hard real-time system?
+  answer: Deadlines are critical
+"114":
+  question:
+    What of the following is not a required characteristic of a real-time
+    system?
+  answer: Bursty stimuli
+"115":
+  question: What mark do you expect to get in this course?
+  answer: A
+"116":
+  question: What does your current GPA correspond to?
+  answer: A
+"117":
+  question: What is your program?
+  answer: "Engineering: Software Engineering"
+"118":
+  question: What degree are you taking?
+  answer: Bachelor of Engineering
+"119":
+  question: What year are you in?
+  answer: Third
+"120":
+  question: This is a test
+  answer: "1"
+"121":
+  question: Which of the following statements deletes the node that curr references?
+  answer: prev.setNext(curr.getNext());
+"122":
+  question: An array-based implementation of an ADT list ______.
+  answer: requires less memory to store an item than a reference-based implementation
+"123":
+  question: In a reference-based implementation of an ADT list ______.
+  answer: an item explicitly references the next item
+"124":
+  question:
+    Which of the following statements is used to insert a new node, referenced
+    by newNode, at the end of a linear linked list?
+  answer: newNode.setNext(curr);  prev.setNext(newNode);
+"125":
+  question:
+    A _______ can be used to facilitate adding nodes to the end of a linear
+    linked list.
+  answer: tail reference
+"126":
+  question: A loop is necessary to find an arbitrary node in a linked list
+  answer: "TRUE"
+"127":
+  question:
+    A reference variable whose sole purpose is to locate the first node in
+    a linked list is called ______.
+  answer: head
+"128":
+  question:
+    A linked list contains components, called ______, which are linked to
+    one another.
+  answer: nodes
+"129":
+  question:
+    When you declare a variable that refers to an object of a given class,
+    you are creating a(n) ______ to the object.
+  answer: reference
+"130":
+  question: To delete a node N from a linear linked list, you will need to ______.
+  answer:
+    set the reference next in the node that precedes N to reference the node
+    that follows N
+"131":
+  question: quiz date?
+  answer: Feb 5
+"132":
+  question: An ADT's ______ govern(s) what its operations are and what they do.
+  answer: specifications
+"133":
+  question: A program that uses an ADT is called a(n) ______.
+  answer: client
+"134":
+  question: An ADT's operations are known as its ______.
+  answer: methods
+"135":
+  question: Data structures are part of an ADT's implementation.
+  answer: "TRUE"
+"136":
+  question: An abstract data type is another name for a data structure.
+  answer: "TRUE"
+"137":
+  question:
+    In the recursive solution to the Towers of Hanoi problem, the number of
+    disks to move ______ at each recursive call.
+  answer: decreases by 1
+"138":
+  question:
+    Which of the following is a base case for a recursive binary search algorithm?
+    (first is the index of the first item in the array, last is the index of the last
+    item in the array, and mid is the midpoint of the array).
+  answer: first > last
+"139":
+  question: A binary search starts at the beginning of the collection of items.
+  answer: "FALSE"
+"140":
+  question: The binary search algorithm can be applied to an unsorted array
+  answer: "FALSE"
+"141":
+  question: In a recursive solution, the ______ terminates the recursive processing
+  answer: c) base case
+"142":
+  question: In the box trace for a recursive method, a new box is created each time
+  answer: a) the method is called
+"143":
+  question:
+    Will you be conducting a self-directed job search in addition to applying
+    to positions on mySuccess?
+  answer: "Yes"
+"144":
+  question: Have you viewed co-op postings in mySuccess?
+  answer: Yes, and I've submitted some applications
+"145":
+  question: How many students are searching for a summer 2020 work term?
+  answer: "2300"
+"146":
+  question: What is your Dream Job?
+  answer: WW3_Vet
+"147":
+  question:
+    What is one thing that you have in common that has nothing to do with
+    Carleton/School?
+  answer: We play Halo Reach
+"148":
+  question: "Chap33T: What is the intensity of a wave?"
+  answer: Power per unit area
+"149":
+  question:
+    "Chap33T: If the frequency is increased, how is the speed of an EM wave
+    affected?"
+  answer: It doesn't change
+"150":
+  question:
+    "Chap33T: If the frequency of an EM wave is increased, how is the wavelength
+    affected?"
+  answer: It decreases
+"151":
+  question:
+    "Chap33: For an EM wave, what is true about the cross product between
+    the electric and the magnetic components at any given point (E x B)?"
+  answer: It is a vector in the travelling direction of the wave
+"152":
+  question:
+    "Chap31T: If the current in a sinusoidally driven series RLC circuit leads
+    the emf, should we increase or decrease the capacitance to increase the rate at
+    which energy is supplied to the resistance?"
+  answer: increase
+"153":
+  question:
+    "Chap31T: An alternating emf source is connected, in turn, to a resistor,
+    a capacitor and then an inductor. Which of the three plots in the figure to the
+    left corresponds to the current in the inductor?"
+  answer: "1"
+"154":
+  question: "Chap31: Which sinusoidal curve corresponds to which phasor?"
+  answer: A=1; B=2; C=3
+"155":
+  question:
+    "Chap31T: In which LC circuit does it take the longest to fully discharge
+    the capacitor?"
+  answer: "2"
+"156":
+  question:
+    "Ch 31: Calculate the frequency of an LC circuit with L = 0.10 mH and\
+    \ C = 1.0 \u03BCF"
+  answer: 15 kHz
+"157":
+  question:
+    "Chap30T: The three circuits contain identical batteries, inductors and
+    resistors. Which circuit will have the largest current through the battery just
+    after the switch is closed?"
+  answer: "2"
+"158":
+  question:
+    "Chap30: The wire loop is subjected, in turn, to four uniform magnetic
+    fields, each directed parallel to the z axis (out of the page). The z component
+    of the fields versus time is shown at right. Which field induces the greatest
+    clockwise emf?"
+  answer: c
+"159":
+  question:
+    "Chap29T: A wire (indicated in blue) carries a current that is uniform
+    throughout its circular cross-section. Which of the three Amperian loops (shown
+    by the dashed lines) will have the largest magnitude of the closed-path integral
+    of B?"
+  answer: a
+"160":
+  question: "Ch 29: What is the direction of the magnetic force on the electron?"
+  answer: left
+"161":
+  question:
+    "Chap29: Which of the following arrangements of five, long, parallel,
+    equally spaced wires gives the largest magnitude force on the central wire due
+    to the currents in the other wires? All the wires carry equal current."
+  answer: b
+"162":
+  question:
+    "Chap29T: Which of the three loops has the largest magnitude magnetic
+    field at the centre of curvature (shown by the dot). All three loops carry the
+    same current."
+  answer: a
+"163":
+  question:
+    "Ch 29: Evaluate the signs on the two currents shown, given the direction
+    of the Amperian loop."
+  answer: "latex: i_1 -ve, i_2 +ve"
+"164":
+  question:
+    "Chap29: Which of these four electrons experiences the largest magnitude
+    of magnetic force from the current in the wire? Assume they all have the same
+    speed v."
+  answer: "1"
+"165":
+  question:
+    "Chap29T: If two wires, with currents, cross each other at right angles,
+    one slightly above the other, forming four regions, which region has the strongest
+    magnetic field pointing out of the page?"
+  answer: II
+"166":
+  question:
+    "Chap28T: A portion of a loop of wire passes between the poles of a magnet
+    as shown.  We are viewing the circuit from above.  When the switch is closed and
+    a current passes through the circuit, what is the movement, if any, of the wire
+    between the poles of the magnet?"
+  answer: The wire moves downward (away from us).
+"167":
+  question:
+    "Chap28T: An electron is moving with an initial velocity parallel to uniform
+    B field.  How will the electron's motion be altered?"
+  answer: There will be no change
+"168":
+  question:
+    "Chap28T: What is the direction of the magnetic force acting on the electron
+    in the figure?"
+  answer: Out of the figure
+"169":
+  question:
+    "Chap27T: A battery has an emf of 12 V and an internal resistance of 2
+    ohms. If the current in the battery is zero, is the potential difference across
+    the battery terminals:"
+  answer: equal to 12 V?
+"170":
+  question:
+    "Ch 27: How much power is dissipated in the 45 \u03A9 resistor? Hint:\
+    \ find the current in the circuit."
+  answer: 75 mW
+"171":
+  question:
+    "Chap27T: A circuit is made using a battery, three identical resistors,
+    and connecting wires. How does the current passing through R3 compare with that
+    passing through R1?"
+  answer: "latex: i_3 = i_1"
+"172":
+  question:
+    "Chap27T: Determine the direction of the emf in the battery represented
+    by the grey box. Based on your answer, which point in the circuit is at the highest
+    electric potential?"
+  answer: b
+"173":
+  question:
+    "Chap26T: Which of the following conductors will have the largest current,
+    if the same potential difference V is applied across their lengths? Assume they
+    are all made from the same material."
+  answer: "#3"
+"174":
+  question:
+    "Ch 26:  If I have copper wire, length L, and double the length to 2L,
+    how does the resistivity change?"
+  answer: Resistivity doesn't change
+"175":
+  question:
+    "Chap26T: The figure shows conduction electrons moving leftward in a wire.
+    What is the direction of the current density J and the electric field E in the
+    wire?"
+  answer: J is to the left and E is to the right
+"176":
+  question:
+    "Ch 26: In the circuit below, the ammeter shows 25 mA and the voltmeter
+    reads 3.4 Volts. Calculate the power used in the resistor."
+  answer: 85 mW
+"177":
+  question: "Chap25T: Which of these 4 circuits has the highest equivalent capacitance?"
+  answer: They have the same equivalent capacitance
+"178":
+  question:
+    "Chap25: A glass dielectric is carefully inserted between two charged
+    conducting plates. What property of the system does NOT change?"
+  answer: Electric charge
+"179":
+  question: "Chap25T: When the plate area of a capacitor increases,"
+  answer: The capacitance increases
+"180":
+  question:
+    "Chap25: A capacitor holds a charge of +/-Q on each plate. What happens
+    to the capacitance C if the charge is doubled?"
+  answer: Capacitance is also doubled
+"181":
+  question:
+    "Chap24T: For the following charge arrangement which statement about the
+    net electric field and net potential at the centre is TRUE?"
+  answer: E = 0, V is not zero
+"182":
+  question:
+    "Ch 24: What is the potential at point P at the centre of the arc, radius
+    R, assuming the two arcs have equal, but opposite charges on them?"
+  answer: 'latex: V = \frac{-\lambda}{4 \epsilon _0 R}'
+"183":
+  question:
+    "Chap24T: Given the set of equipotential surfaces below, and their spacing,
+    what is the magnitude and direction of the electric field?"
+  answer: 20 V/m up
+"184":
+  question:
+    "Chap24T: An electron is moved through the path shown below. The work
+    done by the electric field is:"
+  answer: negative
+"185":
+  question:
+    "Chap24T: What is the direction of the electric field associated with
+    the equipotential lines below?"
+  answer: to the right
+"186":
+  question:
+    "Ch24: Calculate the energy required to assemble the three charges shown
+    into an equilateral triangle, d = 0.40 nm"
+  answer: 'latex: 5.6\times 10^{-18}J'
+"187":
+  question: "Ch 24: What happens if the proton moves from -5.0V to -15V?"
+  answer: Loses potential energy, gains kinetic energy
+"188":
+  question:
+    "Ch 24: If an electron is moved from a potential of 0V to a potential
+    of +1.5 V, is positive or negative work done by an external force?"
+  answer: Negative work done by external force
+"189":
+  question: "Ch 24: What is the magnitude of the electric field if \u0394x = 1.0 cm?"
+  answer: 450 V/m
+"190":
+  question:
+    "Chap 23: If the magnitude of the electric field due to each plate is
+    E, what is the magnitude of the net electric field between the two plates?"
+  answer: "0"
+"191":
+  question:
+    "Chap23T: If the arrows indicate the direction of the electric field lines
+    and the numbers represent the magnitude of E in N/C  through each side of the
+    cube, in which situation does the cube enclose a negative net charge?"
+  answer: C
+"192":
+  question:
+    "Chap23T: The figure shows three Gaussian surfaces that are centred on
+    a positively charged particle. The magnitude of the electric field is uniform
+    on which of the three surfaces?"
+  answer: C
+"193":
+  question:
+    "Chap23T: We have a uniform electric field directed along the x-axis and
+    a square area element. We can place the square upright, such that it is perpendicular
+    to the field, or tilt it such that it makes a 45 degrees angle to the field. Which
+    option is true regarding the electric flux through the square"
+  answer: The flux is greater when the square is upright
+"194":
+  question:
+    "Ch23: What is the value of the surface integral for a cube of side 1
+    metre?"
+  answer: 'latex: 6 \ m^2'
+"195":
+  question:
+    "Chap22: What is the direction of the net electric field at the origin
+    due to the arc of charge?"
+  answer: in the negative x and negative y direction
+"196":
+  question:
+    "Chap22: The equation gives the electric field at a distance z straight
+    above a positively charged disk with radius R and surface charge density sigma.
+    If you increase the radius R of the disk such that it approaches infinity, what
+    does the magnitude of the electric field become?"
+  answer: 'latex: \vec{E} = \frac{\sigma}{2\epsilon_0 } \hat{k}'
+"197":
+  question:
+    "Ch22: What is the net electric field in the centre of this square of
+    charges?"
+  answer: 'latex: \vec{E}=\frac{|q|}{4\pi\epsilon_0d^2 }\vec{i}'
+"198":
+  question:
+    "Chap 22: A free electron and a free proton are released in identical
+    electric fields. How do the magnitudes of the electric force exerted on the two
+    particles compare?"
+  answer: They are equal
+"199":
+  question:
+    "Ch21: The charges are the same magnitude, and spaced evenly. What is
+    the direction of the net force on the central charge?"
+  answer: To the right
+"200":
+  question:
+    "Chap21: A positively charged ball is brought close to an electrically
+    neutral isolated conductor. The conductor is then grounded while the ball is kept
+    close. If the ball is first taken away and the ground connection is then removed,
+    what is the net charge on the conductor?"
+  answer: neutral
+"201":
+  question:
+    "Chap21: A positively charged ball is brought close to an electrically
+    neutral isolated conductor. The conductor is then grounded while the ball is kept
+    close. If the ground connection is first removed and then the ball is taken away
+    what is the net charge on the conductor?"
+  answer: negative
+"202":
+  question: "Chap21: The earth (ground) can be thought of as"
+  answer: A huge conductor
+"203":
+  question:
+    "Chap21: No free particle can have a charge smaller than the elementary
+    charge. This implies that"
+  answer: Charge is quantized
+"204":
+  question: "Chap21: An electrically neutral object contains"
+  answer: An equal number of protons and electrons
+"205":
+  question:
+    "Chap0: A javelin has just been thrown and is on its way up. Which of
+    the following free body diagrams is correct? (ignoring air resistance)"
+  answer: (an image)

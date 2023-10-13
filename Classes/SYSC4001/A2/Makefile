@@ -1,0 +1,2 @@
+A2:  FILTER.c
+	gcc FILTER.c -o FILTER

@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "unti": "sql",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "types.h": "c"
+    }
+}

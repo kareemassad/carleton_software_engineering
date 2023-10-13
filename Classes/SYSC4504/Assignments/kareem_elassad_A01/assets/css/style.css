@@ -1,0 +1,234 @@
+/* general text formatting */
+h1,
+h2,
+h3,
+nav,
+footer,
+details {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  background-color: #e8eaf6;
+}
+
+/* header and footer */
+header,
+footer {
+  color: white;
+  background-color: #1a237e;
+  margin: 0em 4em 0.25em 4em;
+}
+header h1 {
+  padding: 0.5rem 0 0 1.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+header p {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  padding: 0 0 0 1.25rem;
+}
+
+/* main article styling */
+main {
+  background-color: white;
+  /* margin: 0% 15%; */
+  margin: 0;
+  padding: 1em;
+  /* width: 100%; */
+}
+
+section {
+  margin-bottom: 1em;
+  padding: 0;
+  width: 100%;
+}
+
+legend {
+  font-size: 1.35rem;
+  background-color: #7986cb;
+  height: 1.7rem;
+  color: #e8eaf6;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px 0;
+}
+legend p {
+  display: inline;
+  padding: 0px 0px 0px 5px;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  background-color: #c5cae9;
+  width: 100%;
+  border: none;
+}
+form p {
+  margin-top: 0.5em;
+  margin-left: 1em;
+  padding: 0px 0px 0px 5px;
+}
+form input,
+select {
+  margin: 5px;
+}
+form input[type="submit"],
+input[type="reset"] {
+  margin: 10px 10px 10px 20px;
+  font-size: medium;
+  text-transform: capitalize;
+}
+
+section h2 {
+  font-size: 1.35rem;
+  background-color: #545e90;
+  height: 1.7rem;
+  color: #e8eaf6;
+  border: solid 1px black;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+
+label img {
+  margin: 1em 0em;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post {
+  /* margin: 0; */
+  background-color: white;
+  width: 100%;
+  border: solid 0.5px grey;
+}
+
+summary {
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.p-post {
+  padding: 0px 15px 15px 15px;
+  color: #7986cb;
+  font-size: 1rem;
+}
+
+.input-post {
+  display: block;
+  text-align: justify;
+}
+
+.align-table {
+  width: 100%;
+  white-space: nowrap;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: blue;
+  color: white;
+}
+li a:active {
+  background-color: green;
+  color: white;
+}
+
+td.navbar {
+  /* alight items to top of td */
+  vertical-align: top;
+  /* center items */
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.main-table {
+  /* add padding to the sides */
+  padding: 0 4em;
+}
+
+.textbox {
+  /* add padding to sides */
+  padding: 5px 0 0 15px;
+}
+
+td.align-table {
+  /* align items to textarea */
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /* set element size to half */
+  width: 60%;
+}
+td.align-table2 {
+  /* align items to textarea */
+  padding-left: 0px;
+}
+
+.section-post {
+  display: block;
+  text-align: justify;
+}
+
+.avatars {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.align-avatars {
+  position: relative;
+  top: 0.5em;
+  float: none;
+}
+
+input.s-r-buttons {
+  margin: 0;
+  padding: 0;
+  align-items: left;
+}
+table.button-spacing {
+  margin: 0px;
+  padding: 0px;
+}
+
+.align-body {
+  padding-left: 20px;
+}
+
+form input[type="submit"] {
+  margin: 0px 10px 0px 0px;
+}
+
+select {
+  background-color: #dddcde;
+}

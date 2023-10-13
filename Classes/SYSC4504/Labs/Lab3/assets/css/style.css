@@ -1,0 +1,62 @@
+header {
+  /* center and change colors */
+  text-align: center;
+  background-color: lightblue;
+  font-size: 30px;
+  width: 50%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: LavenderBlush;
+}
+
+nav {
+  /* center and change colors */
+  display: block;
+  text-align: justify;
+  background-color: lightgreen;
+  width: 50%;
+  padding: 20px;
+  /* space anchors apart */
+}
+
+nav.a {
+  margin-left: 20px;
+}
+
+nav.ul {
+  /* center and change colors */
+  font-size: 20px;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  font-size: 35px;
+}
+
+ul {
+  border: 1px solid black;
+}
+
+li {
+  margin: 10px;
+}
+
+cite {
+  color: FireBrick;
+}
+
+img {
+  width: 30%;
+  height: 100%;
+  border: 5px dotted Chartreuse;
+}
+
+head {
+  background-color: lightblue;
+}

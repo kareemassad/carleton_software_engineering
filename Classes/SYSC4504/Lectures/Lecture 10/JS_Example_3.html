@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SYSC4504 - Fundamentals of Web Development</title>
+</head>
+
+<body>
+	<header>
+		<h1>SYSC4504 - Fundamentals of Web Development</h1>
+		<h2>Lecture 08</h2>
+		<h3>Introduction to JavaScript <time>(12-01-2023)</time></h3>
+		<style>
+			.box {
+				margin: 2em;
+				padding: 0;
+				border: solid 1pt black;
+			}
+
+			.yellowish {
+				background-color: yellow;
+			}
+
+			.hide {
+				display: none;
+			}
+
+			#list {
+				border: solid 3px black;
+			}
+
+			#list>li {
+				list-style-type: none;
+				display: inline-block;
+			}
+
+			#list>li>img {
+				display: block;
+			}
+
+			.shadow,
+			.selected {
+				box-shadow: 10px 10px lightblue;
+			}
+		</style>
+		<script>
+			// Example 8: Using DOMContenLoaded
+			document.addEventListener('DOMContentLoaded', function () {
+				const list = document.querySelectorAll("#list li");
+				for (let item of list) {
+					item.addEventListener("click", function () {
+						item.classList.toggle('shadow');
+						console.log("Button was pressed");
+					});
+				}
+				const heading = document.querySelector("h4");
+				heading.addEventListener('click', function () {
+					heading.classList.toggle('shadow');
+					console.log("Button was pressed");
+				});
+			});
+		</script>
+		<script>
+			// Example 9: Using Events Object
+			document.addEventListener('DOMContentLoaded', function () {
+				const menu = document.querySelectorAll("#menu li");
+				console.log(menu);
+
+				for (let item of menu) {
+					item.addEventListener("click", memuHandler);
+				}
+
+				function memuHandler(e) {
+					const x = e.clientX;
+					const y = e.clientY;
+					console.log(y);
+					alert("(" + x + "," + y + ")");
+					e.target.classList.toggle("selected");
+				}
+			});
+		</script>
+	</header>
+
+	<nav>
+		<ul id="menu">
+			<li>Carleton</li>
+			<li>Brightspace</li>
+			<li>Carleton Central</li>
+		</ul>
+	</nav>
+
+	<!-- Since this div is the main part of the document, I can replace it with <main></main>-->
+	<main>
+		<p id="here">hello<span>there</span></p>
+		<ul>
+			<li>France</li>
+			<li>Spain</li>
+			<li>Thailand</li>
+		</ul>
+		<div id="my-div">
+			<a href="somewhere.html">
+				<img src="images/Nitendo_website_logo.png" class="thumb">
+			</a>
+		</div>
+
+		<div class="box">
+			<h1>How CSS styles can be programmatically manipulated in JavaScript</h1>
+			<h2>This is a test and thios is </h2>
+		</div>
+		<script>
+			// console.log("example 1: Accessing elements and their properties")
+
+			// const node1 = document.getElementById("here");
+			// console.log(node1);
+			// const node2 = document.getElementsByClassName("box");
+			// console.log(node2);
+			// const node3 = document.getElementsByTagName("div");
+			// console.log(node3);
+
+			// console.log("n5")
+			// const node5 = document.querySelector("div");
+			// console.log(node5);
+
+			// console.log(node1.innerHTML); // hello <span>there</span>
+			// console.log(node1.textContent); //“hello there”
+
+			// console.log("li getelementsbyTagName")
+			// const items = document.getElementsByTagName("li");
+			// console.log(items);
+			// for (let i = 0; i < items.length; i++) {
+			// 	// outputs: France, then Spain, then Thailand
+			// 	console.log(items[i].textContent);
+			// }
+
+			// console.log("#main a querySelector")
+			// const link = document.querySelector("#main a");
+			// console.log(link.href); // outputs: somewhere.html
+
+			// console.log("#main querySelector")
+			// const div = document.querySelector("#main");
+			// div.innerHTML = '<a href="#"><img src="images/Nitendo_website_logo1.png"></a>';
+
+			// console.log("main IMG querySelector")
+			// const img1 = document.querySelector("main img");
+			// console.log(img1.src); // outputs: whatever.gif
+
+			// console.log("a")
+			// let a = document.URL;
+			// console.log(a);
+			// a = document["URL"];
+			// console.log(a);
+			// console.log(img.className); // outputs: thumb
+		</script>
+		<script>
+			// example 2: Changing an Element’s Style
+
+			// console.log("example 2: Changing an Element’s Style")
+			// const node16 = document.getElementById("here");
+			// node16.style.backgroundColor = "#FFFF00";
+			// node16.style.borderWidth = "3px";
+		</script>
+		<script>
+			// example 3: How CSS styles can be programmatically manipulated in JavaScript
+			console.log("example 3: How CSS styles can be programmatically manipulated in JavaScript")
+			var node31 = document.getElementsByClassName("box");
+			console.log(node31);
+			var node41 = document.querySelector("main div");
+			console.log(node41.innerHTML);
+			node41.innerHTML = '<a href="#"><img src="images/Nitendo_website_logo3.png"></a>';
+			node41.className = "yellowish";
+			node41.classList.toggle("hide");
+			console.log(node41);
+			node41.classList.toggle("hide");
+			console.log(node41);
+
+
+			node41.className = "yellowish";
+			console.log(node41);
+
+			node41.classList.remove("yellowish");
+			console.log(node41);
+			node41.classList.add("box");
+			console.log(node41);
+
+			node41.classList.add("yellowish");
+			console.log(node41);
+
+			node41.classList.toggle("hide");
+			console.log(node41);
+			node41.classList.toggle("hide");
+			console.log(node41);
+
+			var node31 = document.getElementById("here");
+			node31.style.backgroundColor = "#FFFF00";
+			node31.style.borderWidth = "3px";
+		</script>
+
+		<div id="first">
+			<h1>DOM Example </h1>
+			<p>Exisiting Element</p>
+		</div>
+
+		<script>
+			// example 4: DOM modification
+			const text = document.createTextNode("This is dynamic");
+			const p = document.createElement("p");
+			p.appendChild(text);
+			const first = document.getElementById("first");
+			first.appendChild(p);
+		</script>
+
+		<input type="submit" id="btn">
+
+		<script>
+			console.log("example 5: Implementing an Event Handler");
+			function simpleHandler() {
+				alert("Button was pressed");
+			}
+			var btn = document.querySelector("#btn");
+			btn.addEventListener("click", simpleHandler);
+		</script>
+
+		<script>
+			//example 6: Listening with an anonymous function
+			var btn = document.getElementById("btn");
+			btn.addEventListener("click", function () {
+				alert("used an anonymous function");
+			});
+
+			document.querySelector("#btn").addEventListener("click", function () {
+				alert("a different approach but same result");
+			});
+
+			document.querySelector("#btn").addEventListener("click", () => {
+				alert("arrow syntax but same result");
+			});
+		</script>
+
+		<h4>This is heading level 4 </h4>
+
+		<ul id="list">
+			<li>
+				<img src="images/Nitendo_website_logo.png" alt="img1">
+				<button>Add to Cart</button>
+			</li>
+			<li>
+				<img src="images/Nitendo_website_logo.png" alt="img2">
+				<button>Add to Cart</button>
+			</li>
+			<li>
+				<img src="images/Nitendo_website_logo.png" alt="img3">
+				<button>Add to Cart</button>
+			</li>
+			<li>
+				<img src="images/Nitendo_website_logo.png" alt="img4">
+				<button>Add to Cart</button>
+			</li>
+		</ul>
+		<script>
+			//example 7: Add even Listener to multiple buttons
+			//select all buttons
+			const btns = document.querySelectorAll("#list button");
+			console.log(btns);
+
+			// this won't work and will generate an error
+			// btns.addEventListener("click", function(){
+			// 	alert("button 1 was pressed");
+			// });
+
+			// Option 1: not ideal
+			btns[0].addEventListener("click", function () {
+				alert("button 1 was pressed");
+			});
+			btns[1].addEventListener("click", function () {
+				alert("button 2 was pressed");
+			});
+
+			// Option 2: Prefered option
+			for (let bt of btns) {
+				//assign event listener to each node
+				bt.addEventListener("click", function () {
+					console.log("Button was pressed");
+				});
+
+			}
+			x = 6;
+			console.log(x); // outputs: 5
+		</script>
+
+
+	</main>
+</body>
+
+</html>

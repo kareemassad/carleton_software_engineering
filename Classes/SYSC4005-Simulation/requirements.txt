@@ -1,0 +1,4 @@
+black==23.1.0
+pandas==1.5.3
+simpy==4.0.1
+matplotlib

@@ -1,0 +1,18 @@
+#lang racket
+
+;; Question 1
+
+; (2.5 marks) Define a recursive procedure count-multiples that takes two arguments, a list of
+; integers and an integer n, n ≥ 1. The procedure counts the number of elements in the list that are
+; a multiple of n, by means of a recursive process.
+; Example:
+; (count-multiples '(1 2 3 4 5 6) 1) ; returns 6
+; (count-multiples '(1 2 3 4 5 6) 2) ; returns 3
+; (count-multiples '(1 2 3 4 5 6) 3) ; returns 2
+
+(define (count-multiples lst n)
+  (if (null? lst)
+      0
+      (if (= 0 (% (car lst) n))
+          (+ 1 (count-multiples (cdr lst) n))
+          (count-multiples (cdr lst) n))))

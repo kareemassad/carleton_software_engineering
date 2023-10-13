@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=bankAccount
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ bankAccount\ here.\r\n\r\n\ @author\ (Kareem\ El\ Assad)\r\n\ @version\ (1/26/2020)\r\n
+comment1.params=
+comment1.target=bankAccount()
+comment2.params=number\ initialBalance
+comment2.target=bankAccount(int,\ int)
+comment3.params=amount
+comment3.target=void\ debit(double)
+comment4.params=amount
+comment4.target=void\ credit(double)
+comment5.params=
+comment5.target=double\ getBalance()
+comment6.params=
+comment6.target=void\ printInfo()
+numComments=7

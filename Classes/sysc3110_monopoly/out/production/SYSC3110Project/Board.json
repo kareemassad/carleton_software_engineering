@@ -1,0 +1,283 @@
+{
+    "tiles": [
+        {
+            "id":0,
+            "name":"Go",
+            "type": "go"
+        },
+        {
+            "id" : 1,
+            "name":"OLD KENT ROAD",
+            "type": "property",
+            "price": 60,
+            "owner": null,
+            "color": "brown"
+        },
+        {
+            "id" : 2,
+            "name":"COMMUNITY CHEST",
+            "type": "special"
+        },
+        {
+            "id" : 3,
+            "name":"WHITECHAPEL ROAD",
+            "type": "property",
+            "price": 60,
+            "owner": null,
+            "color": "brown"
+        },
+        {
+            "id" : 4,
+            "name":"INCOME TAX",
+            "type": "tax",
+            "price": 200
+        },
+        {
+            "id" : 5,
+            "name":"KINGS CROSS STATION",
+            "type": "station",
+            "price": 200,
+            "owner": null
+        },
+        {
+            "id" : 6,
+            "name":"THE ANGEL ISLINGTON",
+            "type": "property",
+            "price": 100,
+            "owner": null,
+            "color": "lightblue"
+        },
+        {
+            "id" : 7,
+            "name":"CHANCE",
+            "type": "special"
+        },
+        {
+            "id" : 8,
+            "name":"EUSTON ROAD",
+            "type": "property",
+            "price": 100,
+            "owner": null,
+            "color": "lightblue"
+        },
+        {
+            "id" : 9,
+            "name":"PENTONVILLE ROAD",
+            "type": "property",
+            "price": 120,
+            "owner": null,
+            "color": "lightblue"
+        },
+        {
+            "id" : 10,
+            "name":"JAIL",
+            "type": "jail"
+        },
+        {
+            "id" : 11,
+            "name":"PALL MALL",
+            "type": "property",
+            "price": 140,
+            "owner": null,
+            "color": "pink"
+        },
+        {
+            "id" : 12,
+            "name":"ELECTRIC COMPANY",
+            "type": "utility",
+            "price": 100,
+            "owner": null
+        },
+        {
+            "id" : 13,
+            "name":"WHITEHALL",
+            "type": "property",
+            "price": 150,
+            "owner": null,
+            "color": "pink"
+        },
+        {
+            "id" : 14,
+            "name":"NORTHUMBERLAND AVE",
+            "type": "property",
+            "price": 160,
+            "owner": null,
+            "color": "pink"
+        },
+        {
+            "id" : 15,
+            "name" : "MARYLEBONE STATION",
+            "type": "station",
+            "price": 200,
+            "owner": null
+        },
+        {
+            "id" : 16,
+            "name":"BOW STREET",
+            "type": "property",
+            "price": 180,
+            "owner": null,
+            "color": "orange"
+        },
+        {
+            "id" : 17,
+            "name":"COMMUNITY CHEST",
+            "type": "special"
+        },
+        {
+            "id" : 18,
+            "name":"MARLBOROUGH STREET",
+            "type": "property",
+            "price": 180,
+            "owner": null,
+            "color": "orange"
+        },
+        {
+            "id" : 19,
+            "name":"VINE STREET",
+            "type": "property",
+            "price": 200,
+            "owner": null,
+            "color": "orange"
+        },
+        {
+            "id" : 20,
+            "name":"FREE PARKING",
+            "type": "free"
+        },
+        {
+            "id" : 21,
+            "name":"STRAND",
+            "type": "property",
+            "price": 220,
+            "owner": null,
+            "color": "red"
+        },
+        {
+            "id" : 22,
+            "name":"CHANCE",
+            "type": "special"
+        },
+        {
+            "id" : 23,
+            "name":"FLEET STREET",
+            "type": "property",
+            "price": 220,
+            "owner": null,
+            "color": "red"
+        },
+        {
+            "id" : 24,
+            "name":"TRAFALGAR SQUARE",
+            "type": "property",
+            "price": 240,
+            "owner": null,
+            "color": "red"
+        },
+        {
+            "id" : 25,
+            "name":"FENCHURCH ST. STATION",
+            "type": "station",
+            "price": 200,
+            "owner": null
+        },
+        {
+            "id" : 26,
+            "name" : "LEICESTER SQUARE",
+            "type" : "property",
+            "price" : 260,
+            "owner" : null,
+            "color" : "yellow"
+        },
+        {
+            "id" : 27,
+            "name" : "COVENTRY STREET",
+            "type" : "property",
+            "price" : 260,
+            "owner" : null,
+            "color" : "yellow"
+        },
+        {
+            "id" : 28,
+            "name" : "WATER WORKS",
+            "type" : "utility",
+            "price" : 150,
+            "owner" : null
+        },
+        {
+            "id" : 29,
+            "name" : "PICCADILLY",
+            "type" : "property",
+            "price" : 280,
+            "owner" : null,
+            "color" : "yellow"
+        },
+        {
+            "id" : 30,
+            "name" : "GO TO JAIL",
+            "type" : "jail"
+        },
+        {
+            "id" : 31,
+            "name" : "REGENT STREET",
+            "type" : "property",
+            "price" : 300,
+            "owner" : null,
+            "color" : "green"
+        },
+        {
+            "id" : 32,
+            "name" : "OXFORD STREET",
+            "type" : "property",
+            "price" : 300,
+            "owner" : null,
+            "color" : "green"
+        },
+        {
+            "id" : 33,
+            "name" : "COMMUNITY CHEST",
+            "type" : "special"
+        },
+        {
+            "id" : 34,
+            "name" : "BOND STREET",
+            "type" : "property",
+            "price" : 320,
+            "owner" : null,
+            "color" : "green"
+        },
+        {
+            "id" : 35,
+            "name" : "LIVERPOOL STATION",
+            "type" : "station",
+            "price" : 200,
+            "owner" : null
+        },
+        {
+            "id" : 36,
+            "name" : "CHANCE",
+            "type" : "special"
+        },
+        {
+            "id" : 37,
+            "name" : "PARK LANE",
+            "type" : "property",
+            "price" : 350,
+            "owner" : null,
+            "color" : "darkblue"
+        },
+        {
+            "id" : 38,
+            "name" : "SUPER TAX",
+            "type" : "tax"
+        },
+        {
+            "id" : 39,
+            "name" : "MAYFAIR",
+            "type" : "property",
+            "price" : 400,
+            "owner" : null,
+            "color" : "darkblue"
+        }
+    ]
+}
