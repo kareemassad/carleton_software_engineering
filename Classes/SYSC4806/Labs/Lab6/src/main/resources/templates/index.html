@@ -7,7 +7,32 @@
     <script src="/js/spa.js" defer></script>
 </head>
 <body>
-<!-- Your SPA root element -->
-<div id="spa-root"></div>
+<div id="spa-root">
+    <div id="create-address-book-section">
+        <button type="button" id="create-address-book-button">Create Address Book</button>
+    </div>
+
+    <div id="add-buddy-section" style="display: none;">
+        <form id="add-buddy-form">
+            <label for="buddy-name">Buddy Name:</label>
+            <input type="text" id="buddy-name" name="name" required><br>
+            <label for="buddy-phone">Buddy Phone Number:</label>
+            <input type="text" id="buddy-phone" name="phoneNumber" required><br>
+            <button type="button" id="add-buddy-button">Add Buddy</button>
+        </form>
+    </div>
+
+    <table id="buddies-table" style="display: none;">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+        </thead>
+        <tbody id="buddy-table-body">
+        </tbody>
+    </table>
+</div>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Address Book</title>
+    <script src="/js/spa.js"></script>
+</head>
+<body data-address-book-id="${addressBook.id}">
+    <h2>Buddies in Address Book</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody id="buddy-table-body">
+            <tr th:each="buddy : ${buddies}">
+                <td th:text="${buddy.id}"></td>
+                <td th:text="${buddy.name}"></td>
+                <td th:text="${buddy.phoneNumber}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form id="add-buddy-form">
+        <label for="buddy-name">Name:</label>
+        <input type="text" id="buddy-name" name="name">
+        <label for="buddy-phone">Phone Number:</label>
+        <input type="text" id="buddy-phone" name="phoneNumber">
+        <button type="button" id="add-buddy-button">Add Buddy</button>
+    </form>
+
+</body>
+</html>
