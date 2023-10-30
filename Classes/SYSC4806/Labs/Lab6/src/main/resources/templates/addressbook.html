@@ -2,24 +2,34 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Address Book</title>
+    <!--<script src="/js/spa.js"></script>-->
 </head>
-<body>
-<h2>Buddies in Address Book</h2>
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Phone Number</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="buddy : ${buddies}">
-        <td th:text="${buddy.id}"></td>
-        <td th:text="${buddy.name}"></td>
-        <td th:text="${buddy.phoneNumber}"></td>
-    </tr>
-    </tbody>
-</table>
+<body data-address-book-id="${addressBook.id}">
+    <h2>Buddies in Address Book</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody id="buddy-table-body">
+            <tr th:each="buddy : ${buddies}">
+                <td th:text="${buddy.id}"></td>
+                <td th:text="${buddy.name}"></td>
+                <td th:text="${buddy.phoneNumber}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form th:action="@{/addressBooks/{addressBookId}/addBuddy(addressBookId=${addressBook.id})}" method="post">
+        <label for="buddy-name">Name:</label>
+        <input type="text" id="buddy-name" name="name" required>
+        <label for="buddy-phone">Phone Number:</label>
+        <input type="text" id="buddy-phone" name="phoneNumber" required>
+        <input type="submit" value="Add Buddy">
+    </form>
+
 </body>
 </html>

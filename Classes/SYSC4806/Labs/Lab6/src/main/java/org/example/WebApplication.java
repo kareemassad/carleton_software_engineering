@@ -10,6 +10,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.dao.DataAccessException;
 
 @SpringBootApplication
 public class WebApplication {
@@ -23,7 +24,8 @@ public class WebApplication {
     @Bean
     public CommandLineRunner demo(AddressBookRepository addressBookRepository, BuddyInfoRepository buddyInfoRepository){
         return (args -> {
-            BuddyInfo b1 = new BuddyInfo();
+            try{
+            BuddyInfo b1 = new BuddyInfo("Kareem", "1234567890");
 //            BuddyInfo b2 = new BuddyInfo(4732L, "Quatey", "696969");
 
             AddressBook addressBook = new AddressBook();
@@ -38,6 +40,9 @@ public class WebApplication {
                 log.info(buddyInfo.toString());
             }
             log.info("");
+            } catch (DataAccessException e) {
+                log.error("Data access error ", e);
+            }
         });
     }
 

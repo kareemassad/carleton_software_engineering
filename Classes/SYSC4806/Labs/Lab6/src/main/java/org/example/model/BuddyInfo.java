@@ -9,8 +9,9 @@ public class BuddyInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
+    @Column(name="name")
     private String name;
+    @Column(name="phone_number")
     private String phoneNumber;
 
     public BuddyInfo(String name, String phoneNumber) {
