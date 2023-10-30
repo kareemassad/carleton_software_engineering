@@ -1,0 +1,16 @@
+@startuml
+actor User
+participant "AddressBook GUI" as GUI
+participant "JList<BuddyInfo>" as List
+participant AddressBook
+participant BuddyInfo
+
+User -> GUI: chooses to remove a buddy
+GUI -> List: get selected buddy
+List --> GUI: return selected BuddyInfo
+GUI -> AddressBook: request to remove buddy
+AddressBook -> AddressBook: search and remove BuddyInfo
+AddressBook -> List: update view
+List --> GUI: view updated
+GUI -> User: display updated AddressBook
+@enduml
