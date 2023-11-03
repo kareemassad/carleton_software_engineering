@@ -44,7 +44,56 @@ public class TicTacToeModel {
         return status;}
 
     private void updateStatus() {
-        return; //TODO
+        //check row win
+        for (int i = 0; i < SIZE; i++) {
+            if(grid[i][0]=='X' && grid[i][1]=='X' && grid[i][2] == 'X'){
+                status = Status.X_WON;
+            }
+
+            if(grid[i][0]=='O' && grid[i][1]=='O' && grid[i][2] == 'O'){
+                status = Status.O_WON;
+            }
+
+        }
+        //check col win
+        for (int j = 0; j < SIZE; j++) {
+            if(grid[0][j]=='X' && grid[1][j]=='X' && grid[2][j] == 'X'){
+                status = Status.X_WON;
+            }
+
+            if(grid[0][j]=='O' && grid[1][j]=='O' && grid[2][j] == 'O'){
+                status = Status.O_WON;
+            }
+        }
+
+        //check diag win
+        if(grid[0][0]=='X' && grid[1][1]=='X' && grid[2][2] == 'X'){
+            status = Status.X_WON;
+        }
+        if(grid[0][0]=='O' && grid[1][1]=='O' && grid[2][2] == 'O'){
+            status = Status.O_WON;
+        }
+        if(grid[0][2]=='X' && grid[1][1]=='X' && grid[2][0] == 'X'){
+            status = Status.X_WON;
+        }
+        if(grid[0][2]=='O' && grid[1][1]=='O' && grid[2][0] == 'O'){
+            status = Status.O_WON;
+        }
+
+        //check tie
+        int count = 0;
+        for(int i = 0; i < SIZE; i++){
+            for(int j = 0; j < SIZE; j++) {
+                if(grid[i][j] == ' '){
+                    //count empty tiles
+                    count++;
+                }
+            }
+        }
+        //if no empty tiles
+        if(count == 0){
+            status = Status.TIE;
+        }
     }
 
     public boolean getTurn() {
