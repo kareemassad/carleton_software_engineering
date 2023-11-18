@@ -1,0 +1,54 @@
+@startuml
+interface TodoItem {
+    +getText(): String
+    +setText(text: String): void
+    +isCompleted(): boolean
+    +setCompleted(completed: boolean): void
+}
+
+class SimpleTodoItem {
+    -text: String
+    -completed: boolean
+    +getText(): String
+    +setText(text: String): void
+    +isCompleted(): boolean
+    +setCompleted(completed: boolean): void
+}
+
+class CompositeTodoItem {
+    -items: List<TodoItem>
+    -completed: boolean
+    +addItem(item: TodoItem): void
+    +getText(): String
+    +setText(text: String): void
+    +isCompleted(): boolean
+    +setCompleted(completed: boolean): void
+}
+
+class TodoListView {
+    -frame: JFrame
+    -todoList: JList<String>
+    -listModel: DefaultListModel<String>
+    -strikeButton: JButton
+    +TodoListView()
+    +setTodoItems(items: List<String>): void
+    +addStrikeListener(listener: ActionListener): void
+    +getSelectedIndex(): int
+    +strikeThroughItem(index: int): void
+}
+
+class TodoListController {
+    -view: TodoListView
+    -model: List<TodoItem>
+    +TodoListController(view: TodoListView)
+    +strikeThroughSelected(): void
+    +updateView(): void
+    +main(args: String[]): void
+}
+
+TodoItem <|.. SimpleTodoItem
+TodoItem <|.. CompositeTodoItem
+TodoItem "0..*" o-- "1" CompositeTodoItem : contains
+TodoListController --> "1" TodoListView : interacts with
+TodoListController --> "1..*" TodoItem : manages
+@enduml

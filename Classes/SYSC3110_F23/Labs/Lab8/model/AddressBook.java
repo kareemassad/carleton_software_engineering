@@ -20,12 +20,15 @@ public class AddressBook extends DefaultListModel<BuddyInfo> {
         }
     }
 
-    public void save(String fileName) throws IOException {
+    public void save(String fileName) {
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))){
             for (BuddyInfo buddy : list) {
                 writer.write(buddy.toString());
                 writer.newLine();
             }
+        }
+        catch (IOException e){
+            System.out.println("Failed to save file");
         }
     }
 
@@ -42,7 +45,7 @@ public class AddressBook extends DefaultListModel<BuddyInfo> {
         this.list = list;
     }
 
-    public void importAddressBook(String fileName) throws IOException {
+    public void importAddressBook(String fileName) {
         //unsure if these are needed
 //        list.clear();
 //        this.clear();
@@ -57,5 +60,10 @@ public class AddressBook extends DefaultListModel<BuddyInfo> {
                 this.addElement(buddy);
             }
         }
+        catch (IOException e){
+            System.out.println("Failed to import file");
+        }
     }
+
+    
 }
