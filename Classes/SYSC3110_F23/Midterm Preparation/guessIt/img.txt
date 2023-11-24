@@ -1,0 +1,54 @@
+@startuml
+class GameModel {
+    - secretWord : String
+    - attemptsLeft : int
+    - maxAttempts : int = 6
+    - wordList : List<String>
+    - wordLength : int = 5
+    + GameModel()
+    + checkGuess(guess : String) : String[]
+    + isGameOver() : boolean
+    + isGuessCorrect(guess : String) : boolean
+    + getSecretWord() : String
+    + getAttemptsLeft() : int
+    + getMaxAttempts() : int
+    + getWordLength() : int
+}
+
+class GameView {
+    - guessInput : JTextField
+    - guessButton : JButton
+    - messageLabel : JLabel
+    - letterButtons : JButton[][]
+    - maxAttempts : int
+    - wordLength : int
+    + GameView()
+    + getGuess() : String
+    + clearGuess() : void
+    + setGuessButtonListener(actionListener : ActionListener) : void
+    + updateMessage(message : String) : void
+    + updateLetterButtons(guess : String, feedback : String[], attempt : int) : void
+    + disableInput() : void
+}
+
+class GameController {
+    - model : GameModel
+    - view : GameView
+    - currentAttempt : int
+    + GameController()
+    + {static} main(args : String[]) : void
+}
+
+GameController --> GameModel : uses >
+GameController --> GameView : uses >
+
+class GameModelTest {
+    - model : GameModel
+    + setUp() : void
+    + testCorrectGuess() : void
+    + testWrongGuess() : void
+    + testGameOver() : void
+}
+
+GameModelTest .down.> GameModel : tests >
+@enduml

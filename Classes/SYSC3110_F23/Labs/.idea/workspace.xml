@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd464c46-7b28-4f93-a89b-da6c7f845726" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/.idea/artifacts/guessIt_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/controller/GuessItController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/controller/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/img.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/model/GuessIt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/guessIt/GuessIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/guessIt/GuessItController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/guessIt/GuessItController$GuessButtonListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/guessIt/GuessItController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/guessIt/GuessItView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/wordle/Wordle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/wordle/WordleController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/wordle/WordleController$GuessButtonListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/wordle/WordleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/production/wordle/WordleView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/test/guessIt/GuessItTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/out/test/wordle/WordleTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/tests/GuessItTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/view/GuessItView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/words.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Midterm Preparation/wordle/.idea/guessIt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Midterm Preparation/wordle/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Midterm Preparation/wordle/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Midterm Preparation/wordle/.idea/wordle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Midterm Preparation/guessIt/.idea/guessIt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Midterm Preparation/wordle/out/production/wordle/Wordle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Midterm Preparation/wordle/out/production/wordle/WordleController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Midterm Preparation/wordle/out/production/wordle/WordleController$GuessButtonListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Midterm Preparation/wordle/out/production/wordle/WordleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Midterm Preparation/wordle/out/production/wordle/WordleView.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2YdJmIk1gNndkeERl9eKTMeHoDr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd464c46-7b28-4f93-a89b-da6c7f845726" name="Changes" comment="" />
+      <created>1700849684411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700849684411</updated>
+      <workItem from="1700849687930" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
