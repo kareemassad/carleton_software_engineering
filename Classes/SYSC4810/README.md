@@ -299,7 +299,7 @@ def add_user(db_path, username, password, role):
 - **Interface**: Command-line interface for inputting username, password, and role.
 - Followed the same design as the one proposed in the assignment document
 
-![img.png](img.png)
+![img.png](imgs/img.png)
 
 ### Proactive Password Checker
 
@@ -376,7 +376,7 @@ if __name__ == "__main__":
 
 - **Interface**: Command-line interface for user login.
 
-![img_1.png](img_1.png)
+![img_1.png](imgs/img_1.png)
 
 #### Sample Simulation: Sign-up, Sign-in, Display Info, and Exit for a given User
 ```text
@@ -555,13 +555,27 @@ As you can see, users from the given table are added to the database, getting an
 
 ## Demonstration and Usage
 
-### Running the Prototype
+### Running the Prototype Locally
 
 1. **Setup**: Requires Python 3.x.
 2. **Virtual Environment**: Run `python -m venv venv` and make sure that your terminal prints (venv) at the end of every execution.
-2. **Dependencies**: Run `pip install -r requirements.txt`
-2. **Execution**: Run `python main.py` in the project directory.
-3. **Operation**: Follow the prompts for user enrollment or login.
+3. **Dependencies**: Run `pip install -r requirements.txt`
+4. **Execution**: Run `python main.py` in the project directory.
+5. **Operation**: Follow the prompts for user enrollment or login.
+6. **Tests**: Run `test_access_control.py`, `test_enrolment.py`, and `test_password_checker.py`
+
+### Running the Prototype on the VM
+
+1. **Setup**: Requires Python 3.x.
+2. **Update VM**: Run the following commands:
+   - `sudo apt-get update`
+   - `sudo apt-get upgrade`
+   - Verify that python is up-to-date: `python3 --version`
+3. **Virtual Environment**: Run `python3 -m venv venv` and make sure that your terminal prints (venv) at the end of every execution.
+4. **Dependencies**: Run `python3 -m pip install -r requirements.txt`
+5. **Execution**: Run `python3 src/main.py` in the project directory.
+6. **Operation**: Follow the prompts for user enrollment or login.
+7. **Tests**: Run `test_access_control.py`, `test_enrolment.py`, and `test_password_checker.py`
 
 ### Sample Use Case
 
@@ -576,7 +590,7 @@ As you can see, users from the given table are added to the database, getting an
     3. Post-login, user details and permissions are displayed.
 
 ### Screenshots
-![img_2.png](img_2.png)
+![img_2.png](imgs/img_2.png)
 
 ```bash
 Finvest Holdings
