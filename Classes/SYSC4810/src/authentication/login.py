@@ -1,10 +1,13 @@
 import bcrypt
-from ..authentication.database import get_user_credentials
-from ..access_control.access_control import User
+from src.access_control.control import User
+from src.authentication.database import get_user_credentials
 
-def authenticate_user(username, password):
-    credentials = get_user_credentials(username)
-    if credentials and bcrypt.checkpw(password.encode(), credentials['password'].encode()):
-        return User(username, credentials['role'])
-    else:
-        return None
+
+def authenticate_user(username, password, db_path="finvest.db"):
+    credentials = get_user_credentials(username, db_path)
+    if credentials:
+        stored_hashed_password = credentials['password'].encode()
+
+        if bcrypt.checkpw(password.encode(), stored_hashed_password):
+            return User(username, credentials['role'])
+    return None
