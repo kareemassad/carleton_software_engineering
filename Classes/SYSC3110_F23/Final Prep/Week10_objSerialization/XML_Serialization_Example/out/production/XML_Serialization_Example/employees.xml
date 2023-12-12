@@ -1,0 +1,22 @@
+<Employees>
+	<Employee>
+		<ID>1111</ID>
+		<name>Wafa</name>
+		<department>SCE</department>
+		<address>
+			<homeNumber>11</homeNumber>
+			<street>Bronson road</street>
+			<city>Ottawa</city>
+		</address>
+	</Employee>
+	<Employee>
+		<ID>2222</ID>
+		<name>Jack</name>
+		<department>SCS</department>
+		<address>
+			<homeNumber>22</homeNumber>
+			<street>Carleton road</street>
+			<city>Toronto</city>
+		</address>
+	</Employee>
+</Employees>

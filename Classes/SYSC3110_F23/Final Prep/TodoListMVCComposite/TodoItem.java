@@ -1,0 +1,12 @@
+public class TodoItem extends TodoComposite {
+    private String text;
+
+    public TodoItem(String text){
+        this.text = text;
+    }
+
+    @Override
+    public void display(){
+        System.out.println("- " + text);
+    }
+}
