@@ -1,4 +1,0 @@
-bcrypt
-black
-tabulate
-pandas
