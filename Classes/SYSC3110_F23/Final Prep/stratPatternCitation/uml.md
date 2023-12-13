@@ -23,6 +23,4 @@ class CitationFormatter {
 CitationStrategy <|.. IEEEFormatStrategy
 CitationStrategy <|.. ACMFormatStrategy
 CitationFormatter --> CitationStrategy : uses
-
-
 ```
