@@ -1,3 +1,4 @@
+// Main.java
 public class Main {
     public static void main(String[] args) {
         TodoProject mainProject = new TodoProject("Main Project");
@@ -17,5 +18,10 @@ public class Main {
         TodoController controller = new TodoController(mainProject, view);
 
         controller.displayTodoList();
+        controller.displayXMLTodoList();
+
+        controller.saveTodoListToFile("todolist.ser");
+        controller.loadTodoListFromFile("todolist.ser");
+
     }
 }

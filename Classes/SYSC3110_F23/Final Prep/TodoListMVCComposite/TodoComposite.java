@@ -1,17 +1,20 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class TodoComposite {
+// TodoComposite.java
+public abstract class TodoComposite implements Serializable {
     protected List<TodoComposite> children = new ArrayList<>();
 
-    public void add(TodoComposite item){
+    public void add(TodoComposite item) {
         children.add(item);
     }
 
-    public void remove(TodoComposite item){
+    public void remove(TodoComposite item) {
         children.remove(item);
     }
 
     public abstract void display();
-}
 
+    public abstract String toXML();
+}

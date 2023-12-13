@@ -1,42 +1,51 @@
 ```plantuml
 @startuml
-' ------- Models -------
+
+interface Serializable <<Interface>> {
+}
+
 abstract class TodoComposite {
-   {field} -List<TodoComposite> children
-   {method} +add(item : TodoComposite) : void
-   {method} +remove(item : TodoComposite) : void
-   {method} #display() : void
+  #children : List<TodoComposite>
+  +add(item : TodoComposite) : void
+  +remove(item : TodoComposite) : void
+  +display() : void
+  {abstract} +toXML() : String
 }
 
 class TodoItem {
-   {field} -String text
-   {method} #display() : void
+  -text : String
+  +display() : void
+  +toXML() : String
 }
 
 class TodoProject {
-   {field} -String name
-   {method} #display() : void
+  -name : String
+  +display() : void
+  +toXML() : String
 }
 
-' ------- View -------
-class TodoView {
-   {method} +displayTodoList(todoList : TodoComposite) : void
-}
-
-' ------- Controller -------
 class TodoController {
-   {field} -TodoComposite todoList
-   {field} -TodoView view
-   {method} +TodoController(todoList : TodoComposite, view : TodoView)
-   {method} +addTodoItem(item : TodoComposite) : void
-   {method} +displayTodoList() : void
+  -todoList : TodoComposite
+  -view : TodoView
+  +TodoController(todoList : TodoComposite, view : TodoView)
+  +addTodoItem(item : TodoComposite) : void
+  +displayTodoList() : void
+  +saveTodoListToFile(filename : String) : void
+  +loadTodoListFromFile(filename : String) : void
 }
 
-' ------- Inheritance & Composition -------
-TodoItem --|> TodoComposite
-TodoProject --|> TodoComposite
-TodoProject "1" *-- "*" TodoComposite : contains
-TodoController --> "1" TodoComposite : manages
-TodoController --> "1" TodoView : uses
+class TodoView {
+  +displayTodoList(todoList : TodoComposite) : void
+}
+
+TodoItem --|> TodoComposite : extends
+TodoProject --|> TodoComposite : extends
+TodoItem --|> Serializable : implements
+TodoProject --|> Serializable : implements
+TodoComposite --|> Serializable : implements
+TodoController -down-> TodoComposite : has
+TodoController -down-> TodoView : has
+
 @enduml
+
 ```
