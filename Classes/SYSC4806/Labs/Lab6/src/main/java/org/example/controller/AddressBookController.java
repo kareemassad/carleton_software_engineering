@@ -21,21 +21,23 @@ public class AddressBookController {
     private BuddyInfoRepository buddyInfoRepository;
 
     @RequestMapping("/")
-    public @ResponseBody String greeting(){
+    public @ResponseBody String greeting() {
         return "Hello, World";
     }
+
     @GetMapping("/addressBooks/{id}")
-    public @ResponseBody ResponseEntity<AddressBook> getAddressBook(@PathVariable Long id){
+    public @ResponseBody ResponseEntity<AddressBook> getAddressBook(@PathVariable Long id) {
         AddressBook addressBook = addressBookRepository.findById(id).orElse(null);
-        if (addressBook != null){
+        if (addressBook != null) {
             return ResponseEntity.ok(addressBook);
         }
         return ResponseEntity.status(404).body(null);
     }
+
     @GetMapping("/addressBooks/{id}/view")
-    public String viewAddressBook(@PathVariable Long id, Model model){
+    public String viewAddressBook(@PathVariable Long id, Model model) {
         AddressBook addressBook = addressBookRepository.findById(id).orElse(null);
-        if (addressBook != null){
+        if (addressBook != null) {
             model.addAttribute("addressBook", addressBook);
             model.addAttribute("buddies", addressBook.getBuddies());
             return "addressbook";
@@ -69,14 +71,14 @@ public class AddressBookController {
     }
 
     @GetMapping("/addressBooks/{addressBookId}/addBuddy")
-    public String showAddBuddyForm(@PathVariable long addressBookId, Model model){
+    public String showAddBuddyForm(@PathVariable long addressBookId, Model model) {
         model.addAttribute("addressBookId", addressBookId);
         model.addAttribute("buddyInfo", new BuddyInfo());
         return "addBuddy";
     }
 
     @PostMapping("/createAddressBook")
-    public String createAddressBook(){
+    public String createAddressBook() {
         AddressBook addressBook = new AddressBook();
         addressBookRepository.save(addressBook);
         return "redirect:/addressBooks/" + addressBook.getId() + "/view";
@@ -84,14 +86,14 @@ public class AddressBookController {
 
     @PostMapping("/api/createAddressBook")
     @ResponseBody
-    public ResponseEntity<AddressBook> createAddressBookApi(){
+    public ResponseEntity<AddressBook> createAddressBookApi() {
         AddressBook addressBook = new AddressBook();
         addressBookRepository.save(addressBook);
         return ResponseEntity.ok(addressBook);
     }
 
     @GetMapping("/createAddressBook")
-    public String showCreateAddressBookForm(Model model){
+    public String showCreateAddressBookForm(Model model) {
         return "createAddressBook";
     }
 
@@ -104,8 +106,9 @@ public class AddressBookController {
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
+
     @RequestMapping("/spa")
-    public String spaEntryPoint(){
+    public String spaEntryPoint() {
         return "index";
     }
 }
