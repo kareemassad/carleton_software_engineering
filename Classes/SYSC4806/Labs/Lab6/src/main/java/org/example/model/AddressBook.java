@@ -12,7 +12,7 @@ public class AddressBook {
     private List<BuddyInfo> buddies = new ArrayList<>();
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     public AddressBook() {

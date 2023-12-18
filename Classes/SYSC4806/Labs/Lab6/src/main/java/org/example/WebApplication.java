@@ -26,11 +26,11 @@ public class WebApplication {
         return (args -> {
             try{
             BuddyInfo b1 = new BuddyInfo("Kareem", "1234567890");
-//            BuddyInfo b2 = new BuddyInfo(4732L, "Quatey", "696969");
+            BuddyInfo b2 = new BuddyInfo("Quatey", "696969");
 
             AddressBook addressBook = new AddressBook();
             addressBook.addBuddyInfo(b1);
-//            addressBook.addBuddyInfo(b2);
+            addressBook.addBuddyInfo(b2);
 
             addressBookRepository.save(addressBook);
 
